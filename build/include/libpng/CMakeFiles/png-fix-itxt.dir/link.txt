@@ -1,0 +1,1 @@
+/usr/bin/clang -g "CMakeFiles/png-fix-itxt.dir/contrib/tools/png-fix-itxt.c.o" -o ../../debug/png-fix-itxt  /usr/lib/libz.so -lm 

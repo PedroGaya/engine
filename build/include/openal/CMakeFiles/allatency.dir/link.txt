@@ -1,0 +1,1 @@
+/usr/bin/clang -g CMakeFiles/allatency.dir/examples/allatency.c.o -o ../../debug/allatency  -Wl,-rpath,/home/gaya/git/c++/engine/build/include/openal: -pthread /usr/lib/libsndfile.so libal-excommon.a libopenal.so.1.23.1 -lrt 

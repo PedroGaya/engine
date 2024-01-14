@@ -1,0 +1,1 @@
+/usr/bin/clang -g CMakeFiles/alrecord.dir/examples/alrecord.c.o -o ../../debug/alrecord  -Wl,-rpath,/home/gaya/git/c++/engine/build/include/openal: -pthread libal-excommon.a libopenal.so.1.23.1 -lrt 

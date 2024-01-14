@@ -1,0 +1,1 @@
+/usr/bin/clang -g CMakeFiles/alreverb.dir/examples/alreverb.c.o -o ../../debug/alreverb  -Wl,-rpath,/home/gaya/git/c++/engine/build/include/openal: -pthread /usr/lib/libsndfile.so libal-excommon.a libopenal.so.1.23.1 -lrt 

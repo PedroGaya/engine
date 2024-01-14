@@ -1,0 +1,660 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4,
+						6,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "include/glfw",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.glfw-Debug-2ef7f9245288a2cb6039.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "include/glfw",
+					"targetIndexes" : 
+					[
+						43
+					]
+				},
+				{
+					"build" : "include/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.glfw.src-Debug-15f61d8bd7d18a73a77f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "include/glfw/src",
+					"targetIndexes" : 
+					[
+						17,
+						44
+					]
+				},
+				{
+					"build" : "include/libpng",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.libpng-Debug-7507dfb488e6e32fb815.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "include/libpng",
+					"targetIndexes" : 
+					[
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38
+					]
+				},
+				{
+					"build" : "include/glm",
+					"childIndexes" : 
+					[
+						5
+					],
+					"jsonFile" : "directory-include.glm-Debug-b6aa273b6322e0f09604.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "include/glm"
+				},
+				{
+					"build" : "include/glm/glm",
+					"jsonFile" : "directory-include.glm.glm-Debug-b42f8748bafcf718b204.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "include/glm/glm"
+				},
+				{
+					"build" : "include/entt",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.entt-Debug-9f55da78a99020bf1103.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "include/entt"
+				},
+				{
+					"build" : "include/openal",
+					"childIndexes" : 
+					[
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.openal-Debug-20593b3de0b091011b98.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "include/openal",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						13,
+						14,
+						15,
+						18,
+						19,
+						39,
+						40,
+						41,
+						42
+					]
+				},
+				{
+					"build" : "include/openal/utils/alsoft-config",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.openal.utils.alsoft-config-Debug-654f2469ff3589bf590d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 6,
+					"source" : "include/openal/utils/alsoft-config",
+					"targetIndexes" : 
+					[
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "engine",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						17,
+						43,
+						44
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "libpng",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5
+					],
+					"name" : "glm",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "EnTT",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						6
+					],
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "OpenAL",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						13,
+						14,
+						15,
+						18,
+						19,
+						39,
+						40,
+						41,
+						42
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "alsoft-config",
+					"parentIndex" : 5,
+					"targetIndexes" : 
+					[
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 7,
+					"id" : "OpenAL::@006f146975abe4971d32",
+					"jsonFile" : "target-OpenAL-Debug-d5302c2f7de07e09191e.json",
+					"name" : "OpenAL",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "al-excommon::@006f146975abe4971d32",
+					"jsonFile" : "target-al-excommon-Debug-8b153b7c3594f2d4e7b4.json",
+					"name" : "al-excommon",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alcommon::@006f146975abe4971d32",
+					"jsonFile" : "target-alcommon-Debug-08ef889924608f928431.json",
+					"name" : "alcommon",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alconvolve::@006f146975abe4971d32",
+					"jsonFile" : "target-alconvolve-Debug-4a395bff1e7735dcdf19.json",
+					"name" : "alconvolve",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alffplay::@006f146975abe4971d32",
+					"jsonFile" : "target-alffplay-Debug-e9a04593e59f616c90eb.json",
+					"name" : "alffplay",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alhrtf::@006f146975abe4971d32",
+					"jsonFile" : "target-alhrtf-Debug-1acbd772df8e2c82a51b.json",
+					"name" : "alhrtf",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "allatency::@006f146975abe4971d32",
+					"jsonFile" : "target-allatency-Debug-32450ff264cb887522e7.json",
+					"name" : "allatency",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alloopback::@006f146975abe4971d32",
+					"jsonFile" : "target-alloopback-Debug-4a8653b1673f62836473.json",
+					"name" : "alloopback",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "almultireverb::@006f146975abe4971d32",
+					"jsonFile" : "target-almultireverb-Debug-ce076fd7c0bdf53829bb.json",
+					"name" : "almultireverb",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alplay::@006f146975abe4971d32",
+					"jsonFile" : "target-alplay-Debug-811768fb37f9639b89a4.json",
+					"name" : "alplay",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alrecord::@006f146975abe4971d32",
+					"jsonFile" : "target-alrecord-Debug-cb327cb623f8d1efd201.json",
+					"name" : "alrecord",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alreverb::@006f146975abe4971d32",
+					"jsonFile" : "target-alreverb-Debug-89a6615831346c266e25.json",
+					"name" : "alreverb",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "alsoft-config::@633bae69f1a096ccef7a",
+					"jsonFile" : "target-alsoft-config-Debug-94bc1237de0a6bbf9519.json",
+					"name" : "alsoft-config",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alstream::@006f146975abe4971d32",
+					"jsonFile" : "target-alstream-Debug-f332f6070cabbdcedc4e.json",
+					"name" : "alstream",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "alstreamcb::@006f146975abe4971d32",
+					"jsonFile" : "target-alstreamcb-Debug-ea95fb2fafaa04d444d7.json",
+					"name" : "alstreamcb",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "altonegen::@006f146975abe4971d32",
+					"jsonFile" : "target-altonegen-Debug-807622e8c1aef13c3ec9.json",
+					"name" : "altonegen",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "engine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-engine-Debug-c7d378b82680b9bc29af.json",
+					"name" : "engine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glfw::@7cf4cdf8cc575720cdf7",
+					"jsonFile" : "target-glfw-Debug-472e3be79f40d1dc63fb.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "makemhr::@006f146975abe4971d32",
+					"jsonFile" : "target-makemhr-Debug-1194374ce8dc8ba1afad.json",
+					"name" : "makemhr",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "openal-info::@006f146975abe4971d32",
+					"jsonFile" : "target-openal-info-Debug-ca04be2a693caec262cf.json",
+					"name" : "openal-info",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png-fix-itxt::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png-fix-itxt-Debug-09a0e0a99859a41465f2.json",
+					"name" : "png-fix-itxt",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_genfiles::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_genfiles-Debug-439ee5819d8614067ee4.json",
+					"name" : "png_genfiles",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_genprebuilt::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_genprebuilt-Debug-b429f81373c83a8fa321.json",
+					"name" : "png_genprebuilt",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_gensym::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_gensym-Debug-518d1df38d901b8744b6.json",
+					"name" : "png_gensym",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_genvers::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_genvers-Debug-4df17f6ba657f4ff48b6.json",
+					"name" : "png_genvers",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_scripts_intprefix_out::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_scripts_intprefix_out-Debug-6fa8b13ca0c091d011b6.json",
+					"name" : "png_scripts_intprefix_out",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_scripts_pnglibconf_c::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_scripts_pnglibconf_c-Debug-8073d84eeba4fd7ce6a1.json",
+					"name" : "png_scripts_pnglibconf_c",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_scripts_prefix_out::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_scripts_prefix_out-Debug-99f001528bc84c18926e.json",
+					"name" : "png_scripts_prefix_out",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_scripts_sym_out::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_scripts_sym_out-Debug-ede018a23ff07eafc9b7.json",
+					"name" : "png_scripts_sym_out",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_scripts_symbols_chk::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_scripts_symbols_chk-Debug-9ecce305d3d6eeb32e03.json",
+					"name" : "png_scripts_symbols_chk",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_scripts_symbols_out::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_scripts_symbols_out-Debug-0a8810932f9e460d793d.json",
+					"name" : "png_scripts_symbols_out",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_scripts_vers_out::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_scripts_vers_out-Debug-71b794b9d44b67806f58.json",
+					"name" : "png_scripts_vers_out",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_shared::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_shared-Debug-6c2efec8e8436dd080dd.json",
+					"name" : "png_shared",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "png_static::@76604b804e797c89b5c0",
+					"jsonFile" : "target-png_static-Debug-18a9b25bd1988ceddab4.json",
+					"name" : "png_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "pngfix::@76604b804e797c89b5c0",
+					"jsonFile" : "target-pngfix-Debug-5628bb6c8dde7b2bcb70.json",
+					"name" : "pngfix",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "pnglibconf_c::@76604b804e797c89b5c0",
+					"jsonFile" : "target-pnglibconf_c-Debug-5aedcb4cbbfe7fa10c86.json",
+					"name" : "pnglibconf_c",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "pnglibconf_h::@76604b804e797c89b5c0",
+					"jsonFile" : "target-pnglibconf_h-Debug-fa2ce2909dfead5f3075.json",
+					"name" : "pnglibconf_h",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "pnglibconf_out::@76604b804e797c89b5c0",
+					"jsonFile" : "target-pnglibconf_out-Debug-92410270dd39ff3d144c.json",
+					"name" : "pnglibconf_out",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "pngprefix_h::@76604b804e797c89b5c0",
+					"jsonFile" : "target-pngprefix_h-Debug-2ab5a9cf1b3154013568.json",
+					"name" : "pngprefix_h",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sofa-info::@006f146975abe4971d32",
+					"jsonFile" : "target-sofa-info-Debug-af7d8da61c4cd5866007.json",
+					"name" : "sofa-info",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sofa-support::@006f146975abe4971d32",
+					"jsonFile" : "target-sofa-support-Debug-6fa4f1b2df527b81b274.json",
+					"name" : "sofa-support",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "uhjdecoder::@006f146975abe4971d32",
+					"jsonFile" : "target-uhjdecoder-Debug-d6227364bb13b4937a42.json",
+					"name" : "uhjdecoder",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "uhjencoder::@006f146975abe4971d32",
+					"jsonFile" : "target-uhjencoder-Debug-a4b906da05df2b065439.json",
+					"name" : "uhjencoder",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@11f96312bf0093c46211",
+					"jsonFile" : "target-uninstall-Debug-e530dace361e87fd25db.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "update_mappings::@7cf4cdf8cc575720cdf7",
+					"jsonFile" : "target-update_mappings-Debug-bdd9d5b2e2731de192bc.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/gaya/git/c++/engine/build",
+		"source" : "/home/gaya/git/c++/engine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

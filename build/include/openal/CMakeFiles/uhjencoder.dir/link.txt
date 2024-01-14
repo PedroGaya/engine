@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g CMakeFiles/uhjencoder.dir/utils/uhjencoder.cpp.o -o ../../debug/uhjencoder  libalcommon.a -pthread /usr/lib/libsndfile.so 

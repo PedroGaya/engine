@@ -1,0 +1,1082 @@
+[
+{
+  "directory": "/home/gaya/git/c++/engine/build",
+  "command": "/usr/bin/clang++  -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glm/glm/.. -I/home/gaya/git/c++/engine/include/entt/src -g -std=gnu++17 -o CMakeFiles/engine.dir/src/main.cpp.o -c /home/gaya/git/c++/engine/src/main.cpp",
+  "file": "/home/gaya/git/c++/engine/src/main.cpp",
+  "output": "CMakeFiles/engine.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build",
+  "command": "/usr/bin/clang  -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glm/glm/.. -I/home/gaya/git/c++/engine/include/entt/src -g -o CMakeFiles/engine.dir/src/glad.c.o -c /home/gaya/git/c++/engine/src/glad.c",
+  "file": "/home/gaya/git/c++/engine/src/glad.c",
+  "output": "CMakeFiles/engine.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /home/gaya/git/c++/engine/include/glfw/src/context.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/context.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /home/gaya/git/c++/engine/include/glfw/src/init.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/init.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /home/gaya/git/c++/engine/include/glfw/src/input.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/input.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /home/gaya/git/c++/engine/include/glfw/src/monitor.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/monitor.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/gaya/git/c++/engine/include/glfw/src/vulkan.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/vulkan.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /home/gaya/git/c++/engine/include/glfw/src/window.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/window.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/gaya/git/c++/engine/include/glfw/src/x11_init.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/x11_init.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/gaya/git/c++/engine/include/glfw/src/x11_monitor.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/x11_monitor.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/gaya/git/c++/engine/include/glfw/src/x11_window.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/x11_window.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/gaya/git/c++/engine/include/glfw/src/xkb_unicode.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/xkb_unicode.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/gaya/git/c++/engine/include/glfw/src/posix_time.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/posix_time.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/gaya/git/c++/engine/include/glfw/src/posix_thread.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/posix_thread.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/gaya/git/c++/engine/include/glfw/src/glx_context.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/glx_context.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/gaya/git/c++/engine/include/glfw/src/egl_context.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/egl_context.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/gaya/git/c++/engine/include/glfw/src/osmesa_context.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/osmesa_context.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/home/gaya/git/c++/engine/include/glfw/include -I/home/gaya/git/c++/engine/include/glfw/src -I/home/gaya/git/c++/engine/build/include/glfw/src -g -std=gnu99 -fPIC -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/gaya/git/c++/engine/include/glfw/src/linux_joystick.c",
+  "file": "/home/gaya/git/c++/engine/include/glfw/src/linux_joystick.c",
+  "output": "include/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/png.c.o -c /home/gaya/git/c++/engine/include/libpng/png.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/png.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/png.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngerror.c.o -c /home/gaya/git/c++/engine/include/libpng/pngerror.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngerror.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngerror.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngget.c.o -c /home/gaya/git/c++/engine/include/libpng/pngget.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngget.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngget.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngmem.c.o -c /home/gaya/git/c++/engine/include/libpng/pngmem.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngmem.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngmem.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngpread.c.o -c /home/gaya/git/c++/engine/include/libpng/pngpread.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngpread.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngpread.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngread.c.o -c /home/gaya/git/c++/engine/include/libpng/pngread.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngread.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngread.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngrio.c.o -c /home/gaya/git/c++/engine/include/libpng/pngrio.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngrio.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngrio.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngrtran.c.o -c /home/gaya/git/c++/engine/include/libpng/pngrtran.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngrtran.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngrtran.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngrutil.c.o -c /home/gaya/git/c++/engine/include/libpng/pngrutil.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngrutil.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngrutil.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngset.c.o -c /home/gaya/git/c++/engine/include/libpng/pngset.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngset.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngset.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngtrans.c.o -c /home/gaya/git/c++/engine/include/libpng/pngtrans.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngtrans.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngtrans.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngwio.c.o -c /home/gaya/git/c++/engine/include/libpng/pngwio.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngwio.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngwio.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngwrite.c.o -c /home/gaya/git/c++/engine/include/libpng/pngwrite.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngwrite.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngwrite.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngwtran.c.o -c /home/gaya/git/c++/engine/include/libpng/pngwtran.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngwtran.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngwtran.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/pngwutil.c.o -c /home/gaya/git/c++/engine/include/libpng/pngwutil.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngwutil.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/pngwutil.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/intel/intel_init.c.o -c /home/gaya/git/c++/engine/include/libpng/intel/intel_init.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/intel/intel_init.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/intel/intel_init.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -Dpng_shared_EXPORTS -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -fPIC -o CMakeFiles/png_shared.dir/intel/filter_sse2_intrinsics.c.o -c /home/gaya/git/c++/engine/include/libpng/intel/filter_sse2_intrinsics.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/intel/filter_sse2_intrinsics.c",
+  "output": "include/libpng/CMakeFiles/png_shared.dir/intel/filter_sse2_intrinsics.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/png.c.o -c /home/gaya/git/c++/engine/include/libpng/png.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/png.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/png.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngerror.c.o -c /home/gaya/git/c++/engine/include/libpng/pngerror.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngerror.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngerror.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngget.c.o -c /home/gaya/git/c++/engine/include/libpng/pngget.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngget.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngget.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngmem.c.o -c /home/gaya/git/c++/engine/include/libpng/pngmem.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngmem.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngmem.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngpread.c.o -c /home/gaya/git/c++/engine/include/libpng/pngpread.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngpread.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngpread.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngread.c.o -c /home/gaya/git/c++/engine/include/libpng/pngread.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngread.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngread.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngrio.c.o -c /home/gaya/git/c++/engine/include/libpng/pngrio.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngrio.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngrio.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngrtran.c.o -c /home/gaya/git/c++/engine/include/libpng/pngrtran.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngrtran.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngrtran.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngrutil.c.o -c /home/gaya/git/c++/engine/include/libpng/pngrutil.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngrutil.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngrutil.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngset.c.o -c /home/gaya/git/c++/engine/include/libpng/pngset.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngset.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngset.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngtrans.c.o -c /home/gaya/git/c++/engine/include/libpng/pngtrans.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngtrans.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngtrans.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngwio.c.o -c /home/gaya/git/c++/engine/include/libpng/pngwio.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngwio.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngwio.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngwrite.c.o -c /home/gaya/git/c++/engine/include/libpng/pngwrite.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngwrite.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngwrite.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngwtran.c.o -c /home/gaya/git/c++/engine/include/libpng/pngwtran.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngwtran.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngwtran.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/pngwutil.c.o -c /home/gaya/git/c++/engine/include/libpng/pngwutil.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/pngwutil.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/pngwutil.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/intel/intel_init.c.o -c /home/gaya/git/c++/engine/include/libpng/intel/intel_init.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/intel/intel_init.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/intel/intel_init.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/png_static.dir/intel/filter_sse2_intrinsics.c.o -c /home/gaya/git/c++/engine/include/libpng/intel/filter_sse2_intrinsics.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/intel/filter_sse2_intrinsics.c",
+  "output": "include/libpng/CMakeFiles/png_static.dir/intel/filter_sse2_intrinsics.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -I/home/gaya/git/c++/engine/include/libpng -g -o CMakeFiles/pngfix.dir/contrib/tools/pngfix.c.o -c /home/gaya/git/c++/engine/include/libpng/contrib/tools/pngfix.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/contrib/tools/pngfix.c",
+  "output": "include/libpng/CMakeFiles/pngfix.dir/contrib/tools/pngfix.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/libpng",
+  "command": "/usr/bin/clang -DPNG_INTEL_SSE_OPT=1 -I/home/gaya/git/c++/engine/build/include/libpng -g -o CMakeFiles/png-fix-itxt.dir/contrib/tools/png-fix-itxt.c.o -c /home/gaya/git/c++/engine/include/libpng/contrib/tools/png-fix-itxt.c",
+  "file": "/home/gaya/git/c++/engine/include/libpng/contrib/tools/png-fix-itxt.c",
+  "output": "include/libpng/CMakeFiles/png-fix-itxt.dir/contrib/tools/png-fix-itxt.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/alcomplex.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/alcomplex.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/alcomplex.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/alcomplex.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/alfstream.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/alfstream.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/alfstream.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/alfstream.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/alsem.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/alsem.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/alsem.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/alsem.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/alstring.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/alstring.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/alstring.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/alstring.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/althrd_setname.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/althrd_setname.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/althrd_setname.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/althrd_setname.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/dynload.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/dynload.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/dynload.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/dynload.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/pffft.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/pffft.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/pffft.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/pffft.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/polyphase_resampler.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/polyphase_resampler.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/polyphase_resampler.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/polyphase_resampler.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/ringbuffer.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/ringbuffer.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/ringbuffer.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/ringbuffer.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alcommon.dir/common/strutils.cpp.o -c /home/gaya/git/c++/engine/include/openal/common/strutils.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/common/strutils.cpp",
+  "output": "include/openal/CMakeFiles/alcommon.dir/common/strutils.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/auxeffectslot.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/auxeffectslot.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/auxeffectslot.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/auxeffectslot.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/buffer.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/buffer.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/buffer.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/buffer.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/debug.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/debug.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/debug.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/debug.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effect.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effect.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effect.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effect.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/autowah.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/autowah.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/autowah.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/autowah.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/chorus.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/chorus.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/chorus.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/chorus.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/compressor.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/compressor.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/compressor.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/compressor.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/convolution.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/convolution.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/convolution.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/convolution.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/dedicated.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/dedicated.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/dedicated.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/dedicated.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/distortion.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/distortion.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/distortion.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/distortion.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/echo.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/echo.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/echo.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/echo.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/effects.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/effects.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/effects.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/effects.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/equalizer.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/equalizer.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/equalizer.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/equalizer.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/fshifter.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/fshifter.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/fshifter.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/fshifter.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/modulator.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/modulator.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/modulator.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/modulator.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/null.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/null.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/null.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/null.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/pshifter.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/pshifter.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/pshifter.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/pshifter.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/reverb.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/reverb.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/reverb.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/reverb.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/effects/vmorpher.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/effects/vmorpher.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/effects/vmorpher.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/effects/vmorpher.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/error.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/error.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/error.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/error.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/event.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/event.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/event.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/event.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/extension.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/extension.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/extension.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/extension.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/filter.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/filter.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/filter.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/filter.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/listener.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/listener.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/listener.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/listener.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/source.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/source.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/source.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/source.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/al/state.cpp.o -c /home/gaya/git/c++/engine/include/openal/al/state.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/al/state.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/al/state.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/alc.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/alc.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/alc.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/alc.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/alu.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/alu.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/alu.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/alu.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/alconfig.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/alconfig.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/alconfig.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/alconfig.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/context.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/context.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/context.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/context.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/device.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/device.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/device.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/device.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/autowah.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/autowah.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/autowah.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/autowah.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/chorus.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/chorus.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/chorus.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/chorus.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/compressor.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/compressor.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/compressor.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/compressor.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/convolution.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/convolution.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/convolution.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/convolution.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/dedicated.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/dedicated.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/dedicated.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/dedicated.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/distortion.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/distortion.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/distortion.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/distortion.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/echo.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/echo.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/echo.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/echo.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/equalizer.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/equalizer.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/equalizer.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/equalizer.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/fshifter.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/fshifter.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/fshifter.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/fshifter.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/modulator.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/modulator.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/modulator.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/modulator.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/null.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/null.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/null.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/null.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/pshifter.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/pshifter.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/pshifter.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/pshifter.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/reverb.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/reverb.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/reverb.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/reverb.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/effects/vmorpher.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/effects/vmorpher.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/effects/vmorpher.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/effects/vmorpher.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/events.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/events.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/events.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/events.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/panning.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/panning.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/panning.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/panning.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/base.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/base.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/base.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/base.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/loopback.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/loopback.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/loopback.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/loopback.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/null.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/null.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/null.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/null.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/pipewire.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/pipewire.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/pipewire.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/pipewire.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/pulseaudio.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/pulseaudio.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/pulseaudio.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/pulseaudio.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/alsa.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/alsa.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/alsa.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/alsa.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/oss.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/oss.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/oss.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/oss.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/jack.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/jack.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/jack.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/jack.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/portaudio.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/portaudio.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/portaudio.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/portaudio.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/alc/backends/wave.cpp.o -c /home/gaya/git/c++/engine/include/openal/alc/backends/wave.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/alc/backends/wave.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/alc/backends/wave.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/ambdec.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/ambdec.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/ambdec.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/ambdec.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/ambidefs.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/ambidefs.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/ambidefs.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/ambidefs.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/bformatdec.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/bformatdec.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/bformatdec.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/bformatdec.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/bs2b.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/bs2b.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/bs2b.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/bs2b.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/bsinc_tables.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/bsinc_tables.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/bsinc_tables.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/bsinc_tables.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/buffer_storage.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/buffer_storage.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/buffer_storage.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/buffer_storage.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/context.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/context.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/context.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/context.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/converter.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/converter.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/converter.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/converter.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/cpu_caps.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/cpu_caps.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/cpu_caps.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/cpu_caps.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/cubic_tables.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/cubic_tables.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/cubic_tables.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/cubic_tables.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/devformat.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/devformat.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/devformat.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/devformat.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/device.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/device.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/device.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/device.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/effectslot.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/effectslot.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/effectslot.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/effectslot.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/except.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/except.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/except.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/except.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/filters/biquad.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/filters/biquad.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/filters/biquad.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/filters/biquad.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/filters/nfc.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/filters/nfc.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/filters/nfc.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/filters/nfc.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/filters/splitter.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/filters/splitter.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/filters/splitter.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/filters/splitter.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/fmt_traits.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/fmt_traits.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/fmt_traits.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/fmt_traits.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/fpu_ctrl.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/fpu_ctrl.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/fpu_ctrl.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/fpu_ctrl.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/helpers.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/helpers.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/helpers.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/helpers.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/hrtf.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/hrtf.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/hrtf.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/hrtf.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/logging.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/logging.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/logging.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/logging.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/mastering.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/mastering.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/mastering.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/mastering.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/mixer.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/mixer.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/mixer.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/mixer.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/uhjfilter.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/uhjfilter.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/uhjfilter.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/uhjfilter.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/uiddefs.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/uiddefs.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/uiddefs.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/uiddefs.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/voice.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/voice.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/voice.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/voice.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/dbus_wrap.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/dbus_wrap.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/dbus_wrap.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/dbus_wrap.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/rtkit.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/rtkit.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/rtkit.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/rtkit.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/mixer/mixer_c.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/mixer/mixer_c.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/mixer/mixer_c.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/mixer/mixer_c.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/mixer/mixer_sse.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/mixer/mixer_sse.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/mixer/mixer_sse.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/mixer/mixer_sse2.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/mixer/mixer_sse2.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/mixer/mixer_sse2.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse2.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/mixer/mixer_sse3.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/mixer/mixer_sse3.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/mixer/mixer_sse3.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse3.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DALC_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_ALEXT_PROTOTYPES -DAL_API=\"__attribute__((visibility(\\\"protected\\\")))\" -DAL_BUILD_LIBRARY -DOpenAL_EXPORTS -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/include -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/pipewire-0.3 -I/usr/include/spa-0.2 -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fPIC -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/OpenAL.dir/core/mixer/mixer_sse41.cpp.o -c /home/gaya/git/c++/engine/include/openal/core/mixer/mixer_sse41.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/core/mixer/mixer_sse41.cpp",
+  "output": "include/openal/CMakeFiles/OpenAL.dir/core/mixer/mixer_sse41.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang  -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/openal-info.dir/utils/openal-info.c.o -c /home/gaya/git/c++/engine/include/openal/utils/openal-info.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/openal-info.c",
+  "output": "include/openal/CMakeFiles/openal-info.dir/utils/openal-info.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/uhjdecoder.dir/utils/uhjdecoder.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/uhjdecoder.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/uhjdecoder.cpp",
+  "output": "include/openal/CMakeFiles/uhjdecoder.dir/utils/uhjdecoder.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/uhjencoder.dir/utils/uhjencoder.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/uhjencoder.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/uhjencoder.cpp",
+  "output": "include/openal/CMakeFiles/uhjencoder.dir/utils/uhjencoder.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/sofa-support.dir/utils/sofa-support.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/sofa-support.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/sofa-support.cpp",
+  "output": "include/openal/CMakeFiles/sofa-support.dir/utils/sofa-support.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/utils -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/makemhr.dir/utils/makemhr/loaddef.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/makemhr/loaddef.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/makemhr/loaddef.cpp",
+  "output": "include/openal/CMakeFiles/makemhr.dir/utils/makemhr/loaddef.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/utils -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/makemhr.dir/utils/makemhr/loadsofa.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/makemhr/loadsofa.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/makemhr/loadsofa.cpp",
+  "output": "include/openal/CMakeFiles/makemhr.dir/utils/makemhr/loadsofa.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/utils -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/makemhr.dir/utils/makemhr/makemhr.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/makemhr/makemhr.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/makemhr/makemhr.cpp",
+  "output": "include/openal/CMakeFiles/makemhr.dir/utils/makemhr/makemhr.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/utils -I/home/gaya/git/c++/engine/include/openal/common -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/sofa-info.dir/utils/sofa-info.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/sofa-info.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/sofa-info.cpp",
+  "output": "include/openal/CMakeFiles/sofa-info.dir/utils/sofa-info.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/al-excommon.dir/examples/common/alhelpers.c.o -c /home/gaya/git/c++/engine/include/openal/examples/common/alhelpers.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/common/alhelpers.c",
+  "output": "include/openal/CMakeFiles/al-excommon.dir/examples/common/alhelpers.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/altonegen.dir/examples/altonegen.c.o -c /home/gaya/git/c++/engine/include/openal/examples/altonegen.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/altonegen.c",
+  "output": "include/openal/CMakeFiles/altonegen.dir/examples/altonegen.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/alrecord.dir/examples/alrecord.c.o -c /home/gaya/git/c++/engine/include/openal/examples/alrecord.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alrecord.c",
+  "output": "include/openal/CMakeFiles/alrecord.dir/examples/alrecord.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/alplay.dir/examples/alplay.c.o -c /home/gaya/git/c++/engine/include/openal/examples/alplay.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alplay.c",
+  "output": "include/openal/CMakeFiles/alplay.dir/examples/alplay.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/alstream.dir/examples/alstream.c.o -c /home/gaya/git/c++/engine/include/openal/examples/alstream.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alstream.c",
+  "output": "include/openal/CMakeFiles/alstream.dir/examples/alstream.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/alreverb.dir/examples/alreverb.c.o -c /home/gaya/git/c++/engine/include/openal/examples/alreverb.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alreverb.c",
+  "output": "include/openal/CMakeFiles/alreverb.dir/examples/alreverb.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/almultireverb.dir/examples/almultireverb.c.o -c /home/gaya/git/c++/engine/include/openal/examples/almultireverb.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/almultireverb.c",
+  "output": "include/openal/CMakeFiles/almultireverb.dir/examples/almultireverb.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/allatency.dir/examples/allatency.c.o -c /home/gaya/git/c++/engine/include/openal/examples/allatency.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/allatency.c",
+  "output": "include/openal/CMakeFiles/allatency.dir/examples/allatency.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/alhrtf.dir/examples/alhrtf.c.o -c /home/gaya/git/c++/engine/include/openal/examples/alhrtf.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alhrtf.c",
+  "output": "include/openal/CMakeFiles/alhrtf.dir/examples/alhrtf.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alstreamcb.dir/examples/alstreamcb.cpp.o -c /home/gaya/git/c++/engine/include/openal/examples/alstreamcb.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alstreamcb.cpp",
+  "output": "include/openal/CMakeFiles/alstreamcb.dir/examples/alstreamcb.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/alconvolve.dir/examples/alconvolve.c.o -c /home/gaya/git/c++/engine/include/openal/examples/alconvolve.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alconvolve.c",
+  "output": "include/openal/CMakeFiles/alconvolve.dir/examples/alconvolve.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -isystem /usr/include/SDL2 -g -std=gnu11 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -fno-math-errno -pthread -o CMakeFiles/alloopback.dir/examples/alloopback.c.o -c /home/gaya/git/c++/engine/include/openal/examples/alloopback.c",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alloopback.c",
+  "output": "include/openal/CMakeFiles/alloopback.dir/examples/alloopback.c.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal",
+  "command": "/usr/bin/clang++ -DRESTRICT=__restrict -I/home/gaya/git/c++/engine/include/openal/common -I/home/gaya/git/c++/engine/include/openal/include -I/home/gaya/git/c++/engine/include/openal/include/AL -isystem /usr/include/SDL2 -g -std=gnu++17 -fvisibility=hidden -Winline -Wunused -Wall -Wextra -Wshadow -Wconversion -Wcast-align -Wpedantic -Wold-style-cast -Wnon-virtual-dtor -Woverloaded-virtual -Wno-c++20-attribute-extensions -fno-math-errno -pthread -o CMakeFiles/alffplay.dir/examples/alffplay.cpp.o -c /home/gaya/git/c++/engine/include/openal/examples/alffplay.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/examples/alffplay.cpp",
+  "output": "include/openal/CMakeFiles/alffplay.dir/examples/alffplay.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/common -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -g -std=gnu++17 -fvisibility=hidden -fPIC -o CMakeFiles/alsoft-config.dir/main.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/alsoft-config/main.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/alsoft-config/main.cpp",
+  "output": "include/openal/utils/alsoft-config/CMakeFiles/alsoft-config.dir/main.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/common -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -g -std=gnu++17 -fvisibility=hidden -fPIC -o CMakeFiles/alsoft-config.dir/mainwindow.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/alsoft-config/mainwindow.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/alsoft-config/mainwindow.cpp",
+  "output": "include/openal/utils/alsoft-config/CMakeFiles/alsoft-config.dir/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/common -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -g -std=gnu++17 -fvisibility=hidden -fPIC -o CMakeFiles/alsoft-config.dir/verstr.cpp.o -c /home/gaya/git/c++/engine/include/openal/utils/alsoft-config/verstr.cpp",
+  "file": "/home/gaya/git/c++/engine/include/openal/utils/alsoft-config/verstr.cpp",
+  "output": "include/openal/utils/alsoft-config/CMakeFiles/alsoft-config.dir/verstr.cpp.o"
+},
+{
+  "directory": "/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config -I/home/gaya/git/c++/engine/build/include/openal -I/home/gaya/git/c++/engine/include/openal/common -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -g -std=gnu++17 -fvisibility=hidden -fPIC -o CMakeFiles/alsoft-config.dir/moc_mainwindow.cpp.o -c /home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config/moc_mainwindow.cpp",
+  "file": "/home/gaya/git/c++/engine/build/include/openal/utils/alsoft-config/moc_mainwindow.cpp",
+  "output": "include/openal/utils/alsoft-config/CMakeFiles/alsoft-config.dir/moc_mainwindow.cpp.o"
+}
+]

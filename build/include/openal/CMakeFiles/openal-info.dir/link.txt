@@ -1,1 +1,0 @@
-/usr/bin/clang -g "CMakeFiles/openal-info.dir/utils/openal-info.c.o" -o ../../debug/openal-info  -Wl,-rpath,/home/gaya/git/c++/engine/build/include/openal: -pthread libopenal.so.1.23.1 

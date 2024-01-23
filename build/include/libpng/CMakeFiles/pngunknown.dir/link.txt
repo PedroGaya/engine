@@ -1,1 +1,0 @@
-/usr/bin/clang -g CMakeFiles/pngunknown.dir/contrib/libtests/pngunknown.c.o -o ../../debug/pngunknown  -Wl,-rpath,/home/gaya/git/c++/engine/build/include/libpng libpng16d.so.16.41.git /usr/lib/libz.so -lm 

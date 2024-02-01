@@ -1,0 +1,1 @@
+/usr/bin/cc -O2 -g -D_DEBUG CMakeFiles/altonegen.dir/examples/altonegen.c.o -o build/altonegen  -Wl,-rpath,/home/gaya/git/c++/engine/vendor/openal: -pthread -lm libal-excommon.a libopenal.so.1.23.1 -lrt 

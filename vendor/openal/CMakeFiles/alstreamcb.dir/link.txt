@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -D_DEBUG CMakeFiles/alstreamcb.dir/examples/alstreamcb.cpp.o -o build/alstreamcb  -Wl,-rpath,/home/gaya/git/c++/engine/vendor/openal -pthread /usr/lib/libsndfile.so libal-excommon.a libopenal.so.1.23.1 -lrt 

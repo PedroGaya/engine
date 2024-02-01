@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -D_DEBUG CMakeFiles/alconvolve.dir/examples/alconvolve.c.o -o build/alconvolve  -Wl,-rpath,/home/gaya/git/c++/engine/vendor/openal -pthread libalcommon.a /usr/lib/libsndfile.so libal-excommon.a libopenal.so.1.23.1 -lrt 

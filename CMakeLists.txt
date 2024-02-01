@@ -29,11 +29,14 @@ add_subdirectory(./vendor/libpng)
 
 add_subdirectory(./vendor/openal)
 
+# glad config
+
+add_subdirectory(./vendor/glad)
+
 # linking
 
 add_library(engine SHARED 
     src/test.cpp 
-    src/glad.c
     )
 
 add_executable(testbed testbed/src/main.cpp)
@@ -43,6 +46,7 @@ target_link_libraries(engine PRIVATE
     glfw 
     png 
     openal
+    glad
     ) 
 
 target_include_directories(testbed PRIVATE ./src)

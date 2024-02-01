@@ -36,9 +36,16 @@ add_library(engine SHARED
     src/glad.c
     )
 
+add_executable(testbed testbed/src/main.cpp)
+
 target_include_directories(engine PRIVATE ./vendor)
 target_link_libraries(engine PRIVATE 
     glfw 
     png 
     openal
+    ) 
+
+target_include_directories(testbed PRIVATE ./src)
+target_link_libraries(testbed PRIVATE
+    engine
     ) 

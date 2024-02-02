@@ -48,7 +48,7 @@ add_library(engine SHARED
     src/test.cpp 
     )
 
-target_include_directories(engine PRIVATE ./vendor)
+target_include_directories(engine PUBLIC ./vendor)
 target_link_libraries(engine PRIVATE 
     glfw 
     png 

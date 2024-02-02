@@ -48,8 +48,6 @@ add_library(engine SHARED
     src/test.cpp 
     )
 
-add_executable(testbed testbed/src/main.cpp)
-
 target_include_directories(engine PRIVATE ./vendor)
 target_link_libraries(engine PRIVATE 
     glfw 
@@ -57,9 +55,4 @@ target_link_libraries(engine PRIVATE
     openal
     glad
     glm::glm
-    ) 
-
-target_include_directories(testbed PRIVATE ./src)
-target_link_libraries(testbed PRIVATE
-    engine
     ) 

@@ -3,8 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/src/**",
-                "${workspaceFolder}/vendor/**"
+                "${workspaceFolder}/core/src/**",
+                "${workspaceFolder}/core/vendor/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -19,8 +19,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/src/**",
-                "${workspaceFolder}/vendor/**"
+                "${workspaceFolder}/core/src/**",
+                "${workspaceFolder}/core/vendor/**"
             ],
             "defines": [
                 "_DEBUG",

@@ -42,7 +42,7 @@
                 "command": "cmake -DCMAKE_BUILD_TYPE=Debug .. && make",
             },
             "linux": {
-                "command": "cmake -DCMAKE_BUILD_TYPE=Debug .. && make",
+                "command": "cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++ .. && make",
             },
             "options": {
                 "cwd": "${workspaceFolder}/build"

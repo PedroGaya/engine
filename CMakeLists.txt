@@ -19,6 +19,7 @@ add_subdirectory(./vendor/glfw)
 # libpng config
 
 set(PNG_STATIC ON)
+set(PNG_SHARED OFF)
 set(PNG_TOOL OFF)
 set(PNG_TESTS OFF)
 set(SKIP_INSTALL_ALL OFF) 
@@ -26,6 +27,9 @@ set(SKIP_INSTALL_ALL OFF)
 add_subdirectory(./vendor/libpng)
 
 # openal-soft config
+
+set(ALSOFT_EXAMPLES OFF)
+set(ALSOFT_UTILS OFF)
 
 add_subdirectory(./vendor/openal)
 

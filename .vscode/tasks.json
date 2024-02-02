@@ -2,7 +2,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Build Core",
+            "label": "Build Engine",
             "windows": {
                 "command": "make"
             },
@@ -10,7 +10,7 @@
                 "command": "make"
             },
             "options": {
-                "cwd": "${workspaceFolder}/build/core"
+                "cwd": "${workspaceFolder}/build/engine"
             },
             "problemMatcher": [
                 "$gcc"

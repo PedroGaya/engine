@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(engine)
+project(jc2d)
 
 # cmake config
 
@@ -12,5 +12,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${PROJECT_BINARY_DIR}/release)
 
 # subprojects
 
-add_subdirectory(./core)
+add_subdirectory(./engine)
 add_subdirectory(./testbed)

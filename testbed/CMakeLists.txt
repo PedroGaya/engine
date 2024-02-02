@@ -6,8 +6,8 @@ add_executable(testbed
     ./src/main.cpp 
 )
 
-target_include_directories(testbed PUBLIC ${core_SOURCE_DIR}/include)
+target_include_directories(testbed PUBLIC ${engine_SOURCE_DIR}/include)
 
 target_link_libraries(testbed
-    engine::core
+    jc2d::engine
 ) 

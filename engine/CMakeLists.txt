@@ -1,4 +1,4 @@
-project(core)
+project(engine)
 
 # glfw config
 
@@ -36,19 +36,19 @@ find_package(glm REQUIRED)
 
 # linking
 
-add_library(core SHARED 
+add_library(engine SHARED 
     src/test.cpp 
 )
-add_library(engine::core ALIAS core)
+add_library(jc2d::engine ALIAS engine)
 
-target_include_directories(core PUBLIC 
-    ${core_SOURCE_DIR}/include
+target_include_directories(engine PUBLIC 
+    ${engine_SOURCE_DIR}/include
 )
-target_include_directories(core PUBLIC 
+target_include_directories(engine PUBLIC 
     ${PROJECT_SOURCE_DIR}/vendor
 )
 
-target_link_libraries(core PUBLIC 
+target_link_libraries(engine PUBLIC 
     glfw 
     png 
     openal

@@ -1,3 +1,0 @@
-/home/gaya/git/c++/engine/testbed/build/CMakeFiles/testbed.dir
-/home/gaya/git/c++/engine/testbed/build/CMakeFiles/edit_cache.dir
-/home/gaya/git/c++/engine/testbed/build/CMakeFiles/rebuild_cache.dir

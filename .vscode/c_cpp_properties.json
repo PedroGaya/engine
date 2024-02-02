@@ -3,7 +3,7 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/core/src/**",
+                "${workspaceFolder}/core/include/**",
                 "${workspaceFolder}/core/vendor/**"
             ],
             "defines": [
@@ -19,7 +19,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/core/src/**",
+                "${workspaceFolder}/core/include/**",
                 "${workspaceFolder}/core/vendor/**"
             ],
             "defines": [

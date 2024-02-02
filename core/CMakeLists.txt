@@ -1,12 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
-project(engine)
-
-# cmake config
-
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${CMAKE_SOURCE_DIR}/build/debug")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
+project(core)
 
 # glfw config
 
@@ -14,7 +6,7 @@ set(GLFW_BUILD_EXAMPLES OFF)
 set(GLFW_BUILD_TESTS OFF)
 set(GLFW_BUILD_DOCS OFF)
 
-add_subdirectory(./vendor/glfw)
+add_subdirectory(${PROJECT_SOURCE_DIR}/vendor/glfw)
 
 # libpng config
 
@@ -24,35 +16,42 @@ set(PNG_TOOL OFF)
 set(PNG_TESTS OFF)
 set(SKIP_INSTALL_ALL OFF) 
 
-add_subdirectory(./vendor/libpng)
+add_subdirectory(${PROJECT_SOURCE_DIR}/vendor/libpng)
 
 # openal-soft config
 
 set(ALSOFT_EXAMPLES OFF)
 set(ALSOFT_UTILS OFF)
 
-add_subdirectory(./vendor/openal)
+add_subdirectory(${PROJECT_SOURCE_DIR}/vendor/openal)
 
 # glad config
 
-add_subdirectory(./vendor/glad)
+add_subdirectory(${PROJECT_SOURCE_DIR}/vendor/glad)
 
 # glm config
 
-set(glm_DIR ./vendor/glm/cmake/glm)
+set(glm_DIR ${PROJECT_SOURCE_DIR}/vendor/glm/cmake/glm)
 find_package(glm REQUIRED)
 
 # linking
 
-add_library(engine SHARED 
+add_library(core SHARED 
     src/test.cpp 
-    )
+)
+add_library(engine::core ALIAS core)
 
-target_include_directories(engine PUBLIC ./vendor)
-target_link_libraries(engine PRIVATE 
+target_include_directories(core PUBLIC 
+    ${core_SOURCE_DIR}/include
+)
+target_include_directories(core PUBLIC 
+    ${PROJECT_SOURCE_DIR}/vendor
+)
+
+target_link_libraries(core PUBLIC 
     glfw 
     png 
     openal
     glad
     glm::glm
-    ) 
+) 

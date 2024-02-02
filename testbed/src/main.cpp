@@ -1,4 +1,4 @@
-#include <test.hpp>
+#include <core/test.hpp>
 
 int main(void) {
     print_int(42);

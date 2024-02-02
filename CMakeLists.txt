@@ -37,6 +37,11 @@ add_subdirectory(./vendor/openal)
 
 add_subdirectory(./vendor/glad)
 
+# glm config
+
+set(glm_DIR ./vendor/glm/cmake/glm)
+find_package(glm REQUIRED)
+
 # linking
 
 add_library(engine SHARED 
@@ -51,6 +56,7 @@ target_link_libraries(engine PRIVATE
     png 
     openal
     glad
+    glm::glm
     ) 
 
 target_include_directories(testbed PRIVATE ./src)

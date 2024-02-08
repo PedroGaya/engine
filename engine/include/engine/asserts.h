@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../defines.h"
+#include "../../src/defines.h"
 
 // Disable assertions by commenting out the below line.
 #define JC2D_ASSERTIONS_ENABLED

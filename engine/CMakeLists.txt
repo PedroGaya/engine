@@ -37,7 +37,6 @@ find_package(glm REQUIRED)
 # linking
 
 add_library(engine SHARED 
-    src/test.cpp
     src/core/logger.cpp 
 )
 add_library(jc2d::engine ALIAS engine)

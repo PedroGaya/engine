@@ -1,8 +1,8 @@
-#include <engine/test.h>
 #include <engine/logger.h>
+#include <engine/asserts.h>
 
 int main(void) {
     JC2D_INFO("What's up %s", "Gamers");
-    foo();
+    JC2D_ASSERT(FALSE);
     return 0;
 }

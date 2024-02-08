@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/engine/include/**",
-                "${workspaceFolder}/engine/vendor/**"
+                "${workspaceFolder}/engine/vendor/**",
+                "${workspaceFolder}/engine/src/**"
             ],
             "defines": [
                 "_DEBUG",

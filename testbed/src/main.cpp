@@ -1,4 +1,4 @@
-#include <engine/test.hpp>
+#include <engine/test.h>
 
 int main(void) {
     print_int(42);

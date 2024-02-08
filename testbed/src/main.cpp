@@ -1,7 +1,8 @@
 #include <engine/test.h>
+#include <engine/logger.h>
 
 int main(void) {
-    print_int(42);
+    JC2D_INFO("What's up %s", "Gamers");
     foo();
     return 0;
 }

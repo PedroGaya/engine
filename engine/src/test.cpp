@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 
+#include <engine/logger.h>
+
 void print_int(int num) {
     printf("Number is: %i\n", num);
 }
@@ -17,5 +19,5 @@ void foo() {
     glm::mat4 Model = glm::mat4(1.0);
     Model[3] = glm::vec4(1.0, 1.0, 0.0, 1.0);
     glm::vec4 Transformed = Model * Position;
-    printf("what?\n");
+    JC2D_WARN("what?\n");
 }

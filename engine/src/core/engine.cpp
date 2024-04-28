@@ -1,90 +1,46 @@
 #include <chrono>
 #include <stdio.h>
+#include <thread>
+
+#include <engine.h>
 
 using Clock = std::chrono::high_resolution_clock;
 using TimePoint = std::chrono::time_point<Clock>;
 using Duration = std::chrono::duration<double>;
 
-typedef struct engine_state_t {
-    double totalTimeElapsed;
-    long globalSimulationFrameCounter;
-    long globalFrameCounter;
-
-    short targetSimulationFPS;
-    short targetFPS;
-    double maxSimulationDeltaTime;
-    double maxDeltaTime;
-
-    bool running;
-    bool paused;
-
-    double deltaTime;
-    double fixedDeltaTime;
-} engine_state_t;
-
-static engine_state_t* engine_state;
-
-bool engine_create() {
-    engine_state->totalTimeElapsed = 0.;
-    engine_state->globalFrameCounter = 0;
-    engine_state->globalSimulationFrameCounter = 0;
-
-    engine_state->targetFPS = 60;
-    engine_state->targetSimulationFPS = 20;
-    engine_state->maxDeltaTime = 1 / engine_state->targetFPS;
-    engine_state->maxSimulationDeltaTime = 1 / engine_state->targetSimulationFPS;
-
-    engine_state->running = false;
-    engine_state->paused = false;
-
-    engine_state->deltaTime = engine_state->maxDeltaTime;
-    engine_state->fixedDeltaTime = engine_state->maxSimulationDeltaTime;
-
-    return true;
-}
-
-bool engine_start() {
-    if (!engine_create()) {
-        return false;
-    };
-
-    Duration accumulator = Duration(0);
+bool Engine::loop() {
+    double accumulator = 0.;
     TimePoint currentTime = Clock::now();
 
-    // GameState previousState;
-    // GameState currentState;
-
-    while (engine_state->running) {
+    while (Engine::isRunning()) {
         TimePoint newTime = Clock::now();
-        Duration frameTime = currentTime - newTime;
-        Duration maxFrameTime = Duration(engine_state->maxDeltaTime);
+        Duration frameTime = newTime - currentTime;
 
-        if (frameTime > maxFrameTime) {
-            frameTime = maxFrameTime;
+        if (frameTime.count() > 0.25) {
+            frameTime = Duration(0.25);
         };
-
         currentTime = newTime;
-        accumulator += frameTime;
 
-        Duration fixedDeltaTime = Duration(engine_state->fixedDeltaTime);
-        while (accumulator >= fixedDeltaTime) {
-            // previousState = currentState;
-            // simulationUpdate(currentState, engine_state->totalTimeElapsed, engine_state->fixedDeltaTime);
-            engine_state->totalTimeElapsed += fixedDeltaTime.count();
-            accumulator -= fixedDeltaTime;
-            engine_state->globalSimulationFrameCounter += 1;
+        m_deltaTime = frameTime.count();
+        accumulator += m_deltaTime;
+
+        while (accumulator >= m_fixedDeltaTime) {
+            // do stuff
+            m_totalTimeElapsed += m_fixedDeltaTime;
+            accumulator -= m_fixedDeltaTime;
+            m_globalSimulationFrameCounter += 1;
         };
 
-        const double alpha = accumulator.count() / fixedDeltaTime.count();
+        const double alpha = accumulator / m_fixedDeltaTime;
+        // render stuff
 
-        // State state = currentState * alpha + previousState * (1 - alpha);
-        // render(state);
+        m_globalFrameCounter += 1;
 
-        engine_state->globalFrameCounter += 1;
-
-        printf("Render frame counter : %i\n", engine_state->globalFrameCounter);
-        printf("Sinulation frame counter : %i\n", engine_state->globalSimulationFrameCounter);
+        printf("Seconds elapsed: %f\n", m_totalTimeElapsed);
+        printf("Render FPS: %f\n", m_globalFrameCounter / m_totalTimeElapsed);
+        printf("Simulation FPS: %f\n", m_globalSimulationFrameCounter / m_totalTimeElapsed);
+        printf("Delta time: %f\n", m_deltaTime);
     };
 
-    return true;
+    return false;
 }

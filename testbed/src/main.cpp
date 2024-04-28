@@ -4,8 +4,7 @@
 #include <engine/core/engine.h>
 
 int main(void) {
-    if (engine_create()) {
-        engine_start();
-    };
+    auto engine = new Engine();
+    engine->start();
     return 0;
 }

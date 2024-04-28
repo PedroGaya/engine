@@ -25,21 +25,22 @@ bool Engine::loop() {
         accumulator += m_deltaTime;
 
         while (accumulator >= m_fixedDeltaTime) {
-            // do stuff
+            // updating stuff
+            std::this_thread::sleep_for(std::chrono::milliseconds(4));
+
             m_totalTimeElapsed += m_fixedDeltaTime;
             accumulator -= m_fixedDeltaTime;
             m_globalSimulationFrameCounter += 1;
         };
 
         const double alpha = accumulator / m_fixedDeltaTime;
-        // render stuff
+
+        // rendering stuff
+        std::this_thread::sleep_for(std::chrono::milliseconds(8));
 
         m_globalFrameCounter += 1;
 
-        printf("Seconds elapsed: %f\n", m_totalTimeElapsed);
-        printf("Render FPS: %f\n", m_globalFrameCounter / m_totalTimeElapsed);
-        printf("Simulation FPS: %f\n", m_globalSimulationFrameCounter / m_totalTimeElapsed);
-        printf("Delta time: %f\n", m_deltaTime);
+        printf("\rRender FPS: %f | Simulation FPS: %f | spf: %f", m_globalFrameCounter / m_totalTimeElapsed, m_globalSimulationFrameCounter / m_totalTimeElapsed, m_deltaTime);
     };
 
     return false;

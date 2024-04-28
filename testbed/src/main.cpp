@@ -1,8 +1,11 @@
 #include <engine/logger.h>
 #include <engine/asserts.h>
 
+#include <engine/core/engine.h>
+
 int main(void) {
-    JC2D_INFO("What's up %s", "Gamers");
-    JC2D_ASSERT(FALSE);
+    if (engine_create()) {
+        engine_start();
+    };
     return 0;
 }

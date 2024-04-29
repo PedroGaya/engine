@@ -1,7 +1,7 @@
 #pragma once
-#include "../../src/defines.h"
 
-#include <engine.h>
+#include "../defines.h"
+#include "engine.h"
 
 class JC2D_API Application {
     Engine m_engine;

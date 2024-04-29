@@ -38,8 +38,8 @@ find_package(glm REQUIRED)
 
 add_library(engine SHARED
     src/core/application.cpp
-    src/core/logger.cpp
-    src/core/engine.cpp 
+    src/core/engine.cpp
+    src/core/logger/logger.cpp 
 )
 add_library(jc2d::engine ALIAS engine)
 

@@ -1,4 +1,4 @@
-#include <application.h>
+#include <jc2d.h>
 
 int main(void) {
     auto app = new Application();

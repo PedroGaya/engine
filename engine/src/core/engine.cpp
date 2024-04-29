@@ -3,6 +3,7 @@
 #include <thread>
 
 #include <engine.h>
+#include <logger.h>
 
 using Clock = std::chrono::high_resolution_clock;
 using TimePoint = std::chrono::time_point<Clock>;
@@ -40,7 +41,13 @@ bool Engine::loop() {
 
         m_globalFrameCounter += 1;
 
-        printf("\rRender FPS: %f | Simulation FPS: %f | spf: %f", m_globalFrameCounter / m_totalTimeElapsed, m_globalSimulationFrameCounter / m_totalTimeElapsed, m_deltaTime);
+        if (m_totalTimeElapsed > 0.) {
+            JC2D_INFO("Time: %.2f | Render FPS: %i | Simulation FPS: %i | mspf: %f",
+                      m_totalTimeElapsed,
+                      (int)(m_globalFrameCounter / m_totalTimeElapsed),
+                      (int)(m_globalSimulationFrameCounter / m_totalTimeElapsed),
+                      m_deltaTime * 1000);
+        }
     };
 
     return false;

@@ -1,8 +1,7 @@
-#include <engine/logger.h>
-#include <engine/asserts.h>
+#include <jc2d.h>
 
 int main(void) {
-    JC2D_INFO("What's up %s", "Gamers");
-    JC2D_ASSERT(FALSE);
+    auto app = new Application();
+    app->Run();
     return 0;
 }

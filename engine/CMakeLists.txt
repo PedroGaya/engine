@@ -36,13 +36,17 @@ find_package(glm REQUIRED)
 
 # linking
 
-add_library(engine SHARED 
-    src/core/logger.cpp 
+add_library(engine SHARED
+    src/core/application.cpp
+    src/core/engine.cpp
+    src/core/logger/logger.cpp 
 )
 add_library(jc2d::engine ALIAS engine)
 
 target_include_directories(engine PUBLIC 
     ${engine_SOURCE_DIR}/include
+    ${engine_SOURCE_DIR}/include/engine
+    ${engine_SOURCE_DIR}/include/engine/core
 )
 target_include_directories(engine PRIVATE 
     ${PROJECT_SOURCE_DIR}/vendor

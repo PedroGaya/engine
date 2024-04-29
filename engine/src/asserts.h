@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../src/defines.h"
+#include "defines.h"
 
 // Disable assertions by commenting out the below line.
 #define JC2D_ASSERTIONS_ENABLED
@@ -13,7 +13,7 @@
 #define debugBreak() __builtin_trap()
 #endif
 
-JC2D_API void report_assertion_failure(const char* expression, const char* message, const char* file, i32 line);
+JC2D_API void report_assertion_failure(const char* expression, const char* message, const char* file, int line);
 
 #define JC2D_ASSERT(expr)                                            \
     {                                                                \

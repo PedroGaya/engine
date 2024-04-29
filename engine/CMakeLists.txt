@@ -36,7 +36,8 @@ find_package(glm REQUIRED)
 
 # linking
 
-add_library(engine SHARED 
+add_library(engine SHARED
+    src/core/application.cpp
     src/core/logger.cpp
     src/core/engine.cpp 
 )

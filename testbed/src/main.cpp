@@ -1,10 +1,7 @@
-#include <engine/logger.h>
-#include <engine/asserts.h>
-
-#include <engine/core/engine.h>
+#include <application.h>
 
 int main(void) {
-    auto engine = new Engine();
-    engine->start();
+    auto app = new Application();
+    app->Run();
     return 0;
 }

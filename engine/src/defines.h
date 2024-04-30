@@ -60,3 +60,6 @@
 #define JC2D_API
 #endif
 #endif
+
+// Bit manipulation
+#define BIT(x) (1 << x)

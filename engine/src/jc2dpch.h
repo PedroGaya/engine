@@ -14,6 +14,10 @@
 #endif
 
 // Vendor
+#include <glad/glad.h>
+#include <AL/al.h>
+#include <png.h>
+#include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
 #include "entt.hpp"

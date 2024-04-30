@@ -45,8 +45,6 @@ add_library(jc2d::engine ALIAS engine)
 
 target_include_directories(engine PUBLIC 
     ${engine_SOURCE_DIR}/include
-    ${engine_SOURCE_DIR}/include/engine
-    ${engine_SOURCE_DIR}/include/engine/core
 )
 target_include_directories(engine PRIVATE 
     ${PROJECT_SOURCE_DIR}/vendor

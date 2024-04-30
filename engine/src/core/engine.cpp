@@ -11,6 +11,8 @@ bool Engine::loop() {
     double accumulator = 0.;
     TimePoint currentTime = Clock::now();
 
+    JC2D_CORE_INFO("Engine running");
+
     while (Engine::isRunning()) {
         TimePoint newTime = Clock::now();
         Duration frameTime = newTime - currentTime;

@@ -3,14 +3,19 @@
 #include "../defines.h"
 #include "engine.h"
 
-class JC2D_API Application {
-   public:
-    Application()
-        : m_engine(){};
-    virtual ~Application();
+namespace JC2D {
+    class JC2D_API Application {
+       public:
+        Application()
+            : m_engine(){};
+        virtual ~Application();
 
-    void Run();
+        void Run();
 
-   private:
-    Engine m_engine;
-};
+       private:
+        Engine m_engine;
+    };
+
+    // Defined by client
+    Application* CreateApplication();
+}  // namespace JC2D

@@ -1,7 +1,7 @@
 #include "application.h"
 
-Application::~Application() {}
+JC2D::Application::~Application() {}
 
-void Application::Run() {
+void JC2D::Application::Run() {
     m_engine.start();
 }

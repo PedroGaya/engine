@@ -12,3 +12,10 @@
 #ifdef JC2D_PLATFORM_WINDOWS
 #include <Windows.h>
 #endif
+
+// Vendor
+#include <glm/glm.hpp>
+
+#include "entt.hpp"
+#include "stb_image.h"
+#include "spdlog/spdlog.h"

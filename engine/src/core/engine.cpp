@@ -1,6 +1,4 @@
-#include <chrono>
-#include <stdio.h>
-#include <thread>
+#include "../jc2dpch.h"
 
 #include "engine.h"
 #include "./logger/logger.h"

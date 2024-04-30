@@ -1,7 +1,7 @@
 #pragma once
+#include "../../jc2dpch.h"
 
 #include "./defines.h"
-#include <string>
 
 namespace JC2D {
     enum class EventType {

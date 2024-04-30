@@ -51,6 +51,7 @@ target_include_directories(engine PUBLIC
 target_include_directories(engine PRIVATE 
     ${PROJECT_SOURCE_DIR}/vendor
 )
+target_precompile_headers(engine PRIVATE src/jc2dpch.h)
 
 target_link_libraries(engine PUBLIC 
     glfw 

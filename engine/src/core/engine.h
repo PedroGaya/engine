@@ -8,17 +8,6 @@ using TimePoint = std::chrono::time_point<Clock>;
 using Duration = std::chrono::duration<double>;
 
 class Engine {
-   private:
-    double m_totalTimeElapsed;
-    long m_globalSimulationFrameCounter;
-    long m_globalFrameCounter;
-
-    bool m_running;
-    bool m_paused;
-
-    double m_deltaTime;
-    double m_fixedDeltaTime;
-
    public:
     Engine()
         : m_totalTimeElapsed(0.),
@@ -51,4 +40,15 @@ class Engine {
 
     void step(int frameCount);
     bool loop();
+
+   private:
+    double m_totalTimeElapsed;
+    long m_globalSimulationFrameCounter;
+    long m_globalFrameCounter;
+
+    bool m_running;
+    bool m_paused;
+
+    double m_deltaTime;
+    double m_fixedDeltaTime;
 };

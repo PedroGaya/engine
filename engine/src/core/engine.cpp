@@ -38,14 +38,6 @@ bool Engine::loop() {
         std::this_thread::sleep_for(std::chrono::milliseconds(8));
 
         m_globalFrameCounter += 1;
-
-        if (m_totalTimeElapsed > 0.) {
-            JC2D_INFO("Time: %.2f | Render FPS: %i | Simulation FPS: %i | mspf: %f",
-                      m_totalTimeElapsed,
-                      (int)(m_globalFrameCounter / m_totalTimeElapsed),
-                      (int)(m_globalSimulationFrameCounter / m_totalTimeElapsed),
-                      m_deltaTime * 1000);
-        }
     };
 
     return false;

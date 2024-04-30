@@ -34,6 +34,17 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/vendor/glad)
 set(glm_DIR ${PROJECT_SOURCE_DIR}/vendor/glm/cmake/glm)
 find_package(glm REQUIRED)
 
+# header only configuration
+
+add_library(entt INTERFACE)
+target_include_directories(entt INTERFACE ${PROJECT_SOURCE_DIR}/vendor/entt/include)
+
+add_library(stb_image INTERFACE)
+target_include_directories(stb_image INTERFACE ${PROJECT_SOURCE_DIR}/vendor/stb_image/include)
+
+add_library(spdlog INTERFACE)
+target_include_directories(spdlog INTERFACE ${PROJECT_SOURCE_DIR}/vendor/spdlog/include)
+
 # linking
 
 add_library(engine SHARED
@@ -45,11 +56,9 @@ add_library(jc2d::engine ALIAS engine)
 
 target_include_directories(engine PUBLIC 
     ${engine_SOURCE_DIR}/include
-    ${engine_SOURCE_DIR}/include/engine
-    ${engine_SOURCE_DIR}/include/engine/core
 )
-target_include_directories(engine PRIVATE 
-    ${PROJECT_SOURCE_DIR}/vendor
+target_include_directories(engine PRIVATE
+    ${engine_SOURCE_DIR}/vendor
 )
 target_precompile_headers(engine PRIVATE src/jc2dpch.h)
 
@@ -59,4 +68,7 @@ target_link_libraries(engine PUBLIC
     openal
     glad
     glm::glm
+    entt
+    stb_image
+    spdlog
 ) 

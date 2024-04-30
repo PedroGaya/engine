@@ -1,67 +1,33 @@
 #pragma once
-#include "../../src/defines.h"
+#include "../../jc2dpch.h"
+#include "../../defines.h"
 
-#define LOG_WARN_ENABLED 1
-#define LOG_INFO_ENABLED 1
-#define LOG_DEBUG_ENABLED 1
-#define LOG_TRACE_ENABLED 1
+namespace JC2D {
+    class JC2D_API Log {
+       public:
+        static void Init();
 
-// Disable debug and trace logging for release builds.
-#if JC2D_RELEASE == 1
-#define LOG_DEBUG_ENABLED 0
-#define LOG_TRACE_ENABLED 0
-#endif
+        inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
+        inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
 
-typedef enum log_level {
-    LOG_LEVEL_FATAL = 0,
-    LOG_LEVEL_ERROR = 1,
-    LOG_LEVEL_WARN = 2,
-    LOG_LEVEL_INFO = 3,
-    LOG_LEVEL_DEBUG = 4,
-    LOG_LEVEL_TRACE = 5
-} log_level;
+        static void ReportAssertionFailure(const char* expression, const char* message, const char* file, int line);
 
-bool initialize_logging();
-void shutdown_logging();
+       private:
+        static std::shared_ptr<spdlog::logger> s_CoreLogger;
+        static std::shared_ptr<spdlog::logger> s_ClientLogger;
+    };
+};  // namespace JC2D
 
-JC2D_API void log_output(log_level level, const char* message, ...);
+// Core macros
+#define JC2D_CORE_TRACE(...) ::JC2D::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define JC2D_CORE_INFO(...) ::JC2D::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define JC2D_CORE_WARN(...) ::JC2D::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define JC2D_CORE_ERROR(...) ::JC2D::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define JC2D_CORE_FATAL(...) ::JC2D::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
-// Logs a fatal-level message.
-#define JC2D_FATAL(message, ...) log_output(LOG_LEVEL_FATAL, message, ##__VA_ARGS__);
-
-#ifndef JC2D_ERROR
-// Logs an error-level message.
-#define JC2D_ERROR(message, ...) log_output(LOG_LEVEL_ERROR, message, ##__VA_ARGS__);
-#endif
-
-#if LOG_WARN_ENABLED == 1
-// Logs a warning-level message.
-#define JC2D_WARN(message, ...) log_output(LOG_LEVEL_WARN, message, ##__VA_ARGS__);
-#else
-// Does nothing when LOG_WARN_ENABLED != 1
-#define JC2D_WARN(message, ...)
-#endif
-
-#if LOG_INFO_ENABLED == 1
-// Logs a info-level message.
-#define JC2D_INFO(message, ...) log_output(LOG_LEVEL_INFO, message, ##__VA_ARGS__);
-#else
-// Does nothing when LOG_INFO_ENABLED != 1
-#define JC2D_INFO(message, ...)
-#endif
-
-#if LOG_DEBUG_ENABLED == 1
-// Logs a debug-level message.
-#define JC2D_DEBUG(message, ...) log_output(LOG_LEVEL_DEBUG, message, ##__VA_ARGS__);
-#else
-// Does nothing when LOG_DEBUG_ENABLED != 1
-#define JC2D_DEBUG(message, ...)
-#endif
-
-#if LOG_TRACE_ENABLED == 1
-// Logs a trace-level message.
-#define JC2D_TRACE(message, ...) log_output(LOG_LEVEL_TRACE, message, ##__VA_ARGS__);
-#else
-// Does nothing when LOG_TRACE_ENABLED != 1
-#define JC2D_TRACE(message, ...)
-#endif
+// Client macros
+#define JC2D_TRACE(...) ::JC2D::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define JC2D_INFO(...) ::JC2D::Log::GetClientLogger()->info(__VA_ARGS__)
+#define JC2D_WARN(...) ::JC2D::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define JC2D_ERROR(...) ::JC2D::Log::GetClientLogger()->error(__VA_ARGS__)
+#define JC2D_FATAL(...) ::JC2D::Log::GetClientLogger()->critical(__VA_ARGS__)

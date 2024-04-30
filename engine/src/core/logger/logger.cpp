@@ -1,46 +1,24 @@
 #include "../../jc2dpch.h"
+#include "spdlog/sinks/stdout_color_sinks.h"
 
 #include "logger.h"
 #include "../../asserts.h"
 
-// TODO: temporary
-#include <stdio.h>
-#include <string.h>
-#include <stdarg.h>
+namespace JC2D {
+    std::shared_ptr<spdlog::logger> Log::s_CoreLogger;
+    std::shared_ptr<spdlog::logger> Log::s_ClientLogger;
 
-bool initialize_logging() {
-    // TODO: create log file.
-    return true;
-}
+    void Log::Init() {
+        spdlog::set_pattern("%^[T] %n: %v%$");
 
-void shutdown_logging() {
-    // TODO: cleanup logging/write queued entries.
-}
+        s_CoreLogger = spdlog::stdout_color_mt("JC2D");
+        s_CoreLogger->set_level(spdlog::level::trace);
 
-void log_output(log_level level, const char* message, ...) {
-    const char* level_strings[6] = {"[FATAL]: ", "[ERROR]: ", "[WARN]:  ", "[INFO]:  ", "[DEBUG]: ", "[TRACE]: "};
+        s_ClientLogger = spdlog::stdout_color_mt("APP");
+        s_ClientLogger->set_level(spdlog::level::trace);
+    }
 
-    // Technically imposes a 32k character limit on a single log entry, but...
-    // DON'T DO THAT!
-    char out_message[32000];
-    memset(out_message, 0, sizeof(out_message));
-
-    // Format original message.
-    // NOTE: Oddly enough, MS's headers override the GCC/Clang va_list type with a "typedef char* va_list" in some
-    // cases, and as a result throws a strange error here. The workaround for now is to just use __builtin_va_list,
-    // which is the type GCC/Clang's va_start expects.
-    __builtin_va_list arg_ptr;
-    va_start(arg_ptr, message);
-    vsnprintf(out_message, 32000, message, arg_ptr);
-    va_end(arg_ptr);
-
-    char out_message2[32000];
-    sprintf(out_message2, "%s%s\n", level_strings[level], out_message);
-
-    // TODO: platform-specific output.
-    printf("%s", out_message2);
-}
-
-void report_assertion_failure(const char* expression, const char* message, const char* file, int line) {
-    log_output(LOG_LEVEL_FATAL, "Assertion Failure: %s, message: '%s', in file: %s, line: %d\n", expression, message, file, line);
-}
+    void Log::ReportAssertionFailure(const char* expression, const char* message, const char* file, int line) {
+        JC2D_CORE_FATAL("Assertion Failure: {0}, message: {1}, in file: {2}, line: {3}", expression, message, file, line);
+    }
+}  // namespace JC2D

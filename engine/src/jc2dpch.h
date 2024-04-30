@@ -3,6 +3,7 @@
 #include <string>
 #include <chrono>
 #include <thread>
+#include <memory>
 
 // TODO: These are temporary. Remove after updating logging system.
 #include <stdio.h>

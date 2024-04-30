@@ -1,9 +1,11 @@
 #include <jc2d.h>
 
-int main(void) {
-    auto app = new JC2D::Application();
-    JC2D::Log::Init();
+class Game : public JC2D::Application {
+   public:
+    Game() = default;
+    ~Game() = default;
+};
 
-    app->Run();
-    return 0;
+JC2D::Application* JC2D::CreateApplication() {
+    return new Game();
 }

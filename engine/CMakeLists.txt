@@ -56,6 +56,7 @@ add_library(jc2d::engine ALIAS engine)
 
 target_include_directories(engine PUBLIC 
     ${engine_SOURCE_DIR}/include
+    ${engine_SOURCE_DIR}/vendor/openal/include
 )
 target_include_directories(engine PRIVATE
     ${engine_SOURCE_DIR}/vendor
@@ -65,7 +66,7 @@ target_precompile_headers(engine PRIVATE src/jc2dpch.h)
 target_link_libraries(engine PUBLIC 
     glfw 
     png 
-    openal
+    OpenAL::OpenAL
     glad
     glm::glm
     entt

@@ -49,14 +49,13 @@ target_include_directories(spdlog INTERFACE ${PROJECT_SOURCE_DIR}/vendor/spdlog/
 
 add_library(engine SHARED
     src/core/application.cpp
-    src/core/engine.cpp
-    src/core/logger/logger.cpp 
+    src/core/logger/logger.cpp
+    src/platform/linux/linux_window.cpp 
 )
 add_library(jc2d::engine ALIAS engine)
 
 target_include_directories(engine PUBLIC 
     ${engine_SOURCE_DIR}/include
-    ${engine_SOURCE_DIR}/vendor/openal/include
 )
 target_include_directories(engine PRIVATE
     ${engine_SOURCE_DIR}/vendor

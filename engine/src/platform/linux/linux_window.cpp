@@ -1,5 +1,8 @@
-#include "jc2dpch.h"
+#include "../../jc2dpch.h"
 #include "linux_window.h"
+
+#include "../../core/logger/logger.h"
+#include "../../asserts.h"
 
 namespace JC2D {
     static bool s_GLFWInitialized = false;
@@ -54,6 +57,10 @@ namespace JC2D {
         }
 
         m_Data.VSync = enabled;
+    }
+
+    bool LinuxWindow::IsVSync() const {
+        return m_Data.VSync;
     }
 
 }  // namespace JC2D

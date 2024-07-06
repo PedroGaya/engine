@@ -41,4 +41,19 @@ namespace JC2D {
         glfwDestroyWindow(m_Window);
     }
 
+    void LinuxWindow::OnUpdate() {
+        glfwPollEvents();
+        glfwSwapBuffers(m_Window);
+    }
+
+    void LinuxWindow::SetVSync(bool enabled) {
+        if (enabled) {
+            glfwSwapInterval(1);
+        } else {
+            glfwSwapInterval(0);
+        }
+
+        m_Data.VSync = enabled;
+    }
+
 }  // namespace JC2D

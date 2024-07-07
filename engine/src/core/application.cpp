@@ -1,5 +1,4 @@
 #include "./application.h"
-#include "./event/ApplicationEvent.h"
 
 #include "./logger/logger.h"
 
@@ -17,12 +16,21 @@ namespace JC2D {
         m_fixedDeltaTime = 0.0083;
 
         m_window = std::unique_ptr<Window>(Window::Create());
-        m_window->SetEventCallback(std::bind(Application::onEvent, this, std::placeholders::_1));
+        m_window->SetEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
     }
     Application::~Application() {}
 
-    void onEvent(Event& event) {
-        JC2D_CORE_INFO("{0}", event);
+    void Application::onEvent(Event& event) {
+        EventDispatcher dispatcher(event);
+
+        dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::onWindowClose, this, std::placeholders::_1));
+
+        JC2D_CORE_INFO("{0}", event.ToString());
+    };
+
+    bool Application::onWindowClose(WindowCloseEvent& event) {
+        stop();
+        return true;
     };
 
     void Application::update() {

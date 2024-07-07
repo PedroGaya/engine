@@ -3,6 +3,8 @@
 #include "../defines.h"
 #include "window.h"
 
+#include "./event/ApplicationEvent.h"
+
 namespace JC2D {
     class JC2D_API Application {
        public:
@@ -10,6 +12,8 @@ namespace JC2D {
         ~Application();
 
         void onEvent(Event& event);
+
+        bool onWindowClose(WindowCloseEvent& event);
 
        public:  // Game loop code
         bool isPaused() { return m_paused; };

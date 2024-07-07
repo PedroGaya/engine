@@ -1,4 +1,5 @@
 #include "event.h"
+#include <sstream>
 
 namespace JC2D {
     class JC2D_API WindowResizeEvent : public Event {
@@ -9,6 +10,12 @@ namespace JC2D {
 
         inline unsigned int getWidth() const { return m_Width; }
         inline unsigned int getHeight() const { return m_Height; }
+
+        std::string ToString() const override {
+            std::stringstream ss;
+            ss << "WindowResizeEvent: " << m_Width << ", " << m_Height;
+            return ss.str();
+        }
 
         EVENT_CLASS_TYPE(WindowResize)
         EVENT_CATEGORY_TYPE(EventCategoryApplication)
@@ -22,6 +29,12 @@ namespace JC2D {
 
         EVENT_CLASS_TYPE(WindowClose)
         EVENT_CATEGORY_TYPE(EventCategoryApplication)
+
+        std::string ToString() const override {
+            std::stringstream ss;
+            ss << "WindowCloseEvent";
+            return ss.str();
+        }
     };
 
     class JC2D_API AppTickEvent : public Event {

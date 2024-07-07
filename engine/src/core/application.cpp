@@ -17,8 +17,13 @@ namespace JC2D {
         m_fixedDeltaTime = 0.0083;
 
         m_window = std::unique_ptr<Window>(Window::Create());
+        m_window->SetEventCallback(std::bind(Application::onEvent, this, std::placeholders::_1));
     }
     Application::~Application() {}
+
+    void onEvent(Event& event) {
+        JC2D_CORE_INFO("{0}", event);
+    };
 
     void Application::update() {
         // rendering stuff

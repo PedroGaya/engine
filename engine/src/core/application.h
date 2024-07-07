@@ -9,6 +9,9 @@ namespace JC2D {
         Application();
         ~Application();
 
+        void onEvent(Event& event);
+
+       public:  // Game loop code
         bool isPaused() { return m_paused; };
         bool pause() {
             m_paused = true;
@@ -38,6 +41,7 @@ namespace JC2D {
        private:
         std::unique_ptr<Window> m_window;
 
+       private:  // Game loop vars
         double m_totalTimeElapsed;
         long m_globalSimulationFrameCounter;
         long m_globalFrameCounter;

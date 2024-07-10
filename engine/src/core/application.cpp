@@ -26,6 +26,13 @@ namespace JC2D {
         dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::onWindowClose, this, std::placeholders::_1));
 
         JC2D_CORE_INFO("{0}", event.ToString());
+
+        for (auto it = m_layerStack.end(); it != m_layerStack.begin();) {
+            (*--it)->onEvent(event);
+            if (event.Handled) {
+                break;
+            }
+        }
     };
 
     bool Application::onWindowClose(WindowCloseEvent& event) {
@@ -35,11 +42,14 @@ namespace JC2D {
 
     void Application::update() {
         // rendering stuff
-        m_window->OnUpdate();
         std::this_thread::sleep_for(std::chrono::milliseconds(8));
     }
     void Application::fixedUpdate() {
-        // updating stuff
+        // everything else
+        m_window->OnUpdate();
+        for (Layer* layer : m_layerStack) {
+            layer->onUpdate();
+        }
         std::this_thread::sleep_for(std::chrono::milliseconds(4));
     }
 

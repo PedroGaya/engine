@@ -50,6 +50,8 @@ target_include_directories(spdlog INTERFACE ${PROJECT_SOURCE_DIR}/vendor/spdlog/
 add_library(engine SHARED
     src/core/application.cpp
     src/core/logger/logger.cpp
+    src/core/layer/layer.cpp
+    src/core/layer/layerStack.cpp
     src/platform/linux/linux_window.cpp 
 )
 add_library(jc2d::engine ALIAS engine)

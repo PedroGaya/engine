@@ -22,6 +22,13 @@ namespace JC2D {
         inline int GetRepeatCount() { return m_RepeatCount; }
 
         EVENT_CLASS_TYPE(KeyPressed)
+
+        std::string ToString() const override {
+            std::stringstream ss;
+            ss << "KeyPressedEvent: " << m_KeyCode << " Repeat: " << m_RepeatCount;
+            return ss.str();
+        }
+
        private:
         int m_RepeatCount;
     };
@@ -32,5 +39,11 @@ namespace JC2D {
             : KeyEvent(keyCode) {}
 
         EVENT_CLASS_TYPE(KeyReleased)
+
+        std::string ToString() const override {
+            std::stringstream ss;
+            ss << "KeyReleasedEvent: " << m_KeyCode;
+            return ss.str();
+        }
     };
 }  // namespace JC2D

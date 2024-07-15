@@ -18,7 +18,7 @@
     {                                                                         \
         if (expr) {                                                           \
         } else {                                                              \
-            JC2D::Log::ReportAssertionFailure(#expr, "", __FILE__, __LINE__); \
+            JC2D::Log::reportAssertionFailure(#expr, "", __FILE__, __LINE__); \
             debugBreak();                                                     \
         }                                                                     \
     }
@@ -27,7 +27,7 @@
     {                                                                              \
         if (expr) {                                                                \
         } else {                                                                   \
-            JC2D::Log::ReportAssertionFailure(#expr, message, __FILE__, __LINE__); \
+            JC2D::Log::reportAssertionFailure(#expr, message, __FILE__, __LINE__); \
             debugBreak();                                                          \
         }                                                                          \
     }
@@ -37,7 +37,7 @@
     {                                                                         \
         if (expr) {                                                           \
         } else {                                                              \
-            JC2D::Log::ReportAssertionFailure(#expr, "", __FILE__, __LINE__); \
+            JC2D::Log::reportAssertionFailure(#expr, "", __FILE__, __LINE__); \
             debugBreak();                                                     \
         }                                                                     \
     }

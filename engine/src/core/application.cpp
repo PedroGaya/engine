@@ -42,15 +42,13 @@ namespace JC2D {
 
     void Application::update() {
         // rendering stuff
-        std::this_thread::sleep_for(std::chrono::milliseconds(8));
+        m_window->OnUpdate();
     }
     void Application::fixedUpdate() {
         // everything else
-        m_window->OnUpdate();
         for (Layer* layer : m_layerStack) {
             layer->onUpdate();
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(4));
     }
 
     void Application::run() {

@@ -3,8 +3,8 @@
 #include "../defines.h"
 #include "window.h"
 
-#include "./event/ApplicationEvent.h"
-#include "./layer/layerStack.h"
+#include "./event/application_event.h"
+#include "./layer/layer_stack.h"
 
 namespace JC2D {
     class JC2D_API Application {
@@ -16,8 +16,8 @@ namespace JC2D {
 
         bool onWindowClose(WindowCloseEvent& event);
 
-        void pushLayer(Layer* layer) { m_layerStack.PushLayer(layer); };
-        void pusOverlay(Layer* overlay) { m_layerStack.PushOverlay(overlay); };
+        void pushLayer(Layer* layer) { m_layerStack.pushLayer(layer); };
+        void pusOverlay(Layer* overlay) { m_layerStack.pushOverlay(overlay); };
 
        public:  // Game loop code
         bool isPaused() { return m_paused; };

@@ -15,8 +15,8 @@ namespace JC2D {
         m_deltaTime = 0.;
         m_fixedDeltaTime = 0.0083;
 
-        m_window = std::unique_ptr<Window>(Window::Create());
-        m_window->SetEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
+        m_window = std::unique_ptr<Window>(Window::create());
+        m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
     }
     Application::~Application() {}
 
@@ -25,11 +25,11 @@ namespace JC2D {
 
         dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::onWindowClose, this, std::placeholders::_1));
 
-        JC2D_CORE_INFO("{0}", event.ToString());
+        JC2D_CORE_INFO("{0}", event.toString());
 
         for (auto it = m_layerStack.end(); it != m_layerStack.begin();) {
             (*--it)->onEvent(event);
-            if (event.Handled) {
+            if (event.handled) {
                 break;
             }
         }
@@ -42,7 +42,7 @@ namespace JC2D {
 
     void Application::update() {
         // rendering stuff
-        m_window->OnUpdate();
+        m_window->onUpdate();
     }
     void Application::fixedUpdate() {
         // everything else

@@ -2,14 +2,14 @@
 
 namespace JC2D {
     struct WindowProps {
-        std::string Title;
-        unsigned int Width;
-        unsigned int Height;
+        std::string title;
+        unsigned int width;
+        unsigned int height;
 
         WindowProps(const std::string& title = "JC2D",
                     unsigned int width = 1280,
                     unsigned int height = 720)
-            : Title(title), Width(width), Height(height) {}
+            : title(title), width(width), height(height) {}
     };
 
     class JC2D_API Window {
@@ -18,15 +18,15 @@ namespace JC2D {
 
         virtual ~Window() = default;
 
-        virtual void OnUpdate() = 0;
+        virtual void onUpdate() = 0;
 
-        virtual unsigned int GetWidth() const = 0;
-        virtual unsigned int GetHeight() const = 0;
+        virtual unsigned int getWidth() const = 0;
+        virtual unsigned int getHeight() const = 0;
 
-        virtual void SetEventCallback(const EventCallbackFn& callback) = 0;
-        virtual void SetVSync(bool enabled) = 0;
-        virtual bool IsVSync() const = 0;
+        virtual void setEventCallback(const EventCallbackFn& callback) = 0;
+        virtual void setVSync(bool enabled) = 0;
+        virtual bool isVSync() const = 0;
 
-        static Window* Create(const WindowProps& props = WindowProps());
+        static Window* create(const WindowProps& props = WindowProps());
     };
 }  // namespace JC2D

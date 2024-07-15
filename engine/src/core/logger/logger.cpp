@@ -5,20 +5,20 @@
 #include "../../asserts.h"
 
 namespace JC2D {
-    std::shared_ptr<spdlog::logger> Log::s_CoreLogger;
-    std::shared_ptr<spdlog::logger> Log::s_ClientLogger;
+    std::shared_ptr<spdlog::logger> Log::s_coreLogger;
+    std::shared_ptr<spdlog::logger> Log::s_clientLogger;
 
-    void Log::Init() {
+    void Log::init() {
         spdlog::set_pattern("%^[%X.%e] %n: %v%$");
 
-        s_CoreLogger = spdlog::stdout_color_mt("JC2D");
-        s_CoreLogger->set_level(spdlog::level::trace);
+        s_coreLogger = spdlog::stdout_color_mt("JC2D");
+        s_coreLogger->set_level(spdlog::level::trace);
 
-        s_ClientLogger = spdlog::stdout_color_mt("APP");
-        s_ClientLogger->set_level(spdlog::level::trace);
+        s_clientLogger = spdlog::stdout_color_mt("APP");
+        s_clientLogger->set_level(spdlog::level::trace);
     }
 
-    void Log::ReportAssertionFailure(const char* expression, const char* message, const char* file, int line) {
+    void Log::reportAssertionFailure(const char* expression, const char* message, const char* file, int line) {
         JC2D_CORE_FATAL("Assertion Failure: {0}, message: {1}, in file: {2}, line: {3}", expression, message, file, line);
     }
 }  // namespace JC2D

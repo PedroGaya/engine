@@ -94,6 +94,10 @@
         "variant": "cpp",
         "regex": "cpp",
         "forward_list": "cpp",
-        "text_encoding": "cpp"
+        "text_encoding": "cpp",
+        "strstream": "cpp",
+        "coroutine": "cpp",
+        "ranges": "cpp",
+        "typeindex": "cpp"
     },
 }

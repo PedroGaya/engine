@@ -3,11 +3,11 @@
 #include "core/application.h"
 #include "core/logger/logger.h"
 
-extern JC2D::Application* JC2D::CreateApplication();
+extern JC2D::Application* JC2D::createApplication();
 
 int main(int argc, char** argv) {
-    JC2D::Log::Init();
-    auto app = JC2D::CreateApplication();
+    JC2D::Log::init();
+    auto app = JC2D::createApplication();
     JC2D_CORE_INFO("Start");
     app->run();
     delete app;

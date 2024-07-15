@@ -1,27 +1,28 @@
 #include "event.h"
+#include <sstream>
 
 namespace JC2D {
     class JC2D_API MouseMovedEvent : public Event {
        public:
         MouseMovedEvent(float X, float Y)
-            : m_MouseX(X),
-              m_MouseY(Y) {}
+            : m_mouseX(X),
+              m_mouseY(Y) {}
 
-        inline float GetMouseX() { return m_MouseX; };
-        inline float GetMouseY() { return m_MouseY; }
+        inline float getMouseX() { return m_mouseX; };
+        inline float getMouseY() { return m_mouseY; }
 
         EVENT_CLASS_TYPE(MouseMoved)
         EVENT_CATEGORY_TYPE(EventCategoryMouse | EventCategoryInput)
 
-        std::string ToString() const override {
+        std::string toString() const override {
             std::stringstream ss;
-            ss << "MouseMovedEvent: " << m_MouseX << ", " << m_MouseY;
+            ss << "MouseMovedEvent: " << m_mouseX << ", " << m_mouseY;
             return ss.str();
         }
 
        private:
-        float m_MouseX,
-            m_MouseY;
+        float m_mouseX,
+            m_mouseY;
     };
 
     class JC2D_API MouseScrolledEvent : public Event {
@@ -30,10 +31,10 @@ namespace JC2D {
             : m_xOffset(xOffset),
               m_yOffset(yOffset) {}
 
-        inline float GetMouseX() { return m_xOffset; };
-        inline float GetMouseY() { return m_yOffset; };
+        inline float getMouseX() { return m_xOffset; };
+        inline float getMouseY() { return m_yOffset; };
 
-        std::string ToString() const override {
+        std::string toString() const override {
             std::stringstream ss;
             ss << "MouseScrolledEvent: " << m_xOffset << ", " << m_yOffset;
             return ss.str();
@@ -48,27 +49,27 @@ namespace JC2D {
 
     class JC2D_API MouseButtonEvent : public Event {
        public:
-        inline int GetMouseButton() const { return m_Button; };
+        inline int getMouseButton() const { return m_button; };
 
         EVENT_CATEGORY_TYPE(EventCategoryMouse | EventCategoryInput)
 
        protected:
         MouseButtonEvent(int button)
-            : m_Button(button) {}
-        int m_Button;
+            : m_button(button) {}
+        int m_button;
     };
 
     class JC2D_API MouseButtonPressedEvent : public MouseButtonEvent {
        public:
         MouseButtonPressedEvent(int button)
             : MouseButtonEvent(button) {}
-        inline int GetMouseButton() const { return m_Button; };
+        inline int getMouseButton() const { return m_button; };
 
         EVENT_CLASS_TYPE(MouseButtonPressed)
 
-        std::string ToString() const override {
+        std::string toString() const override {
             std::stringstream ss;
-            ss << "MouseButtonPressedEvent: " << m_Button;
+            ss << "MouseButtonPressedEvent: " << m_button;
             return ss.str();
         }
     };
@@ -77,13 +78,13 @@ namespace JC2D {
        public:
         MouseButtonReleasedEvent(int button)
             : MouseButtonEvent(button) {}
-        inline int GetMouseButton() const { return m_Button; };
+        inline int getMouseButton() const { return m_button; };
 
         EVENT_CLASS_TYPE(MouseButtonReleased)
 
-        std::string ToString() const override {
+        std::string toString() const override {
             std::stringstream ss;
-            ss << "MouseButtonReleasedEvent: " << m_Button;
+            ss << "MouseButtonReleasedEvent: " << m_button;
             return ss.str();
         }
     };

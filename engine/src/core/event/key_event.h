@@ -1,16 +1,17 @@
 #include "event.h"
+#include <sstream>
 
 namespace JC2D {
     class JC2D_API KeyEvent : public Event {
        public:
-        inline int GetKeyCode() { return m_KeyCode; }
+        inline int getKeyCode() { return m_keyCode; }
 
         EVENT_CATEGORY_TYPE(EventCategoryKeyboard | EventCategoryInput)
        protected:
         KeyEvent(int keyCode)
-            : m_KeyCode(keyCode) {}
+            : m_keyCode(keyCode) {}
 
-        int m_KeyCode;
+        int m_keyCode;
     };
 
     class JC2D_API KeyPressedEvent : public KeyEvent {
@@ -23,9 +24,9 @@ namespace JC2D {
 
         EVENT_CLASS_TYPE(KeyPressed)
 
-        std::string ToString() const override {
+        std::string toString() const override {
             std::stringstream ss;
-            ss << "KeyPressedEvent: " << m_KeyCode << " Repeat: " << m_RepeatCount;
+            ss << "KeyPressedEvent: " << m_keyCode << " Repeat: " << m_RepeatCount;
             return ss.str();
         }
 
@@ -40,9 +41,9 @@ namespace JC2D {
 
         EVENT_CLASS_TYPE(KeyReleased)
 
-        std::string ToString() const override {
+        std::string toString() const override {
             std::stringstream ss;
-            ss << "KeyReleasedEvent: " << m_KeyCode;
+            ss << "KeyReleasedEvent: " << m_keyCode;
             return ss.str();
         }
     };

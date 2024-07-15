@@ -4,5 +4,5 @@
 #include "../src/asserts.h"
 
 // ----- Entry Point ----------
-#include "../src/EntryPoint.h"
+#include "../src/entry_point.h"
 // ----------------------------

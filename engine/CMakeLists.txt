@@ -51,7 +51,7 @@ add_library(engine SHARED
     src/core/application.cpp
     src/core/logger/logger.cpp
     src/core/layer/layer.cpp
-    src/core/layer/layerStack.cpp
+    src/core/layer/layer_stack.cpp
     src/platform/linux/linux_window.cpp 
 )
 add_library(jc2d::engine ALIAS engine)

@@ -23,12 +23,12 @@ namespace JC2D {
     };
 
 #define EVENT_CLASS_TYPE(type)                                                  \
-    static EventType GetStaticType() { return EventType::type; }                \
-    virtual EventType GetEventType() const override { return GetStaticType(); } \
-    virtual const char* GetName() const override { return #type; }
+    static EventType getStaticType() { return EventType::type; }                \
+    virtual EventType getEventType() const override { return getStaticType(); } \
+    virtual const char* getName() const override { return #type; }
 
 #define EVENT_CATEGORY_TYPE(category) \
-    virtual int GetCategoryFlags() const override { return category; }
+    virtual int getCategoryFlags() const override { return category; }
 
     enum EventCategory {
         None = 0,
@@ -43,16 +43,16 @@ namespace JC2D {
         friend class EventDispatcher;
 
        public:
-        virtual EventType GetEventType() const = 0;
-        virtual const char* GetName() const = 0;
-        virtual int GetCategoryFlags() const = 0;
-        virtual std::string ToString() const { return GetName(); };
+        virtual EventType getEventType() const = 0;
+        virtual const char* getName() const = 0;
+        virtual int getCategoryFlags() const = 0;
+        virtual std::string toString() const { return getName(); };
 
-        inline bool IsInCategory(EventCategory category) {
-            return GetCategoryFlags() & category;
+        inline bool isInCategory(EventCategory category) {
+            return getCategoryFlags() & category;
         }
 
-        bool Handled = false;
+        bool handled = false;
     };
 
     class EventDispatcher {
@@ -61,19 +61,19 @@ namespace JC2D {
 
        public:
         EventDispatcher(Event& event)
-            : m_Event(event) {};
+            : m_event(event) {};
 
         template <typename T>
         bool Dispatch(EventFn<T> func) {
-            if (m_Event.GetEventType() == T::GetStaticType()) {
-                m_Event.Handled = func(*(T*)&m_Event);
+            if (m_event.getEventType() == T::getStaticType()) {
+                m_event.handled = func(*(T*)&m_event);
                 return true;
             }
             return false;
         }
 
        private:
-        Event& m_Event;
+        Event& m_event;
     };
 
 }  // namespace JC2D

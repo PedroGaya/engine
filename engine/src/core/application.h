@@ -63,5 +63,5 @@ namespace JC2D {
     };
 
     // Defined by client
-    Application* CreateApplication();
+    Application* createApplication();
 }  // namespace JC2D

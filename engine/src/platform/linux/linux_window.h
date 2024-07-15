@@ -6,31 +6,31 @@ namespace JC2D {
         LinuxWindow(const WindowProps& props);
         virtual ~LinuxWindow();
 
-        void OnUpdate() override;
+        void onUpdate() override;
 
-        inline unsigned int GetWidth() const override { return m_Data.Width; }
-        inline unsigned int GetHeight() const override { return m_Data.Height; }
+        inline unsigned int getWidth() const override { return m_data.width; }
+        inline unsigned int getHeight() const override { return m_data.height; }
 
         // Window attributes
-        inline void SetEventCallback(const EventCallbackFn& callback) { m_Data.EventCallback = callback; }
-        void SetVSync(bool enabled) override;
-        bool IsVSync() const override;
+        inline void setEventCallback(const EventCallbackFn& callback) { m_data.callback = callback; }
+        void setVSync(bool enabled) override;
+        bool isVSync() const override;
 
        private:
-        virtual void Init(const WindowProps& props);
-        virtual void Shutdown();
+        virtual void init(const WindowProps& props);
+        virtual void shutdown();
 
        private:
-        GLFWwindow* m_Window;
+        GLFWwindow* m_window;
 
         struct WindowData {
-            std::string Title;
-            unsigned int Width, Height;
+            std::string title;
+            unsigned int width, height;
             bool VSync;
 
-            EventCallbackFn EventCallback;
+            EventCallbackFn callback;
         };
 
-        WindowData m_Data;
+        WindowData m_data;
     };
 }  // namespace JC2D

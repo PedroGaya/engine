@@ -4,6 +4,7 @@
 #include <chrono>
 #include <thread>
 #include <memory>
+#include <vector>
 
 #ifdef JC2D_PLATFORM_WINDOWS
 #include <Windows.h>

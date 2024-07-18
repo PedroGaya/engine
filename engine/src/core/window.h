@@ -28,5 +28,7 @@ namespace JC2D {
         virtual bool isVSync() const = 0;
 
         static Window* create(const WindowProps& props = WindowProps());
+
+        virtual void* getNativeWindow() const = 0;
     };
 }  // namespace JC2D

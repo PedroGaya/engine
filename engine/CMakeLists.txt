@@ -34,6 +34,10 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/vendor/glad)
 set(glm_DIR ${PROJECT_SOURCE_DIR}/vendor/glm/cmake/glm)
 find_package(glm REQUIRED)
 
+# imgui config
+
+add_subdirectory(${PROJECT_SOURCE_DIR}/vendor/imgui)
+
 # header only configuration
 
 add_library(entt INTERFACE)
@@ -52,6 +56,7 @@ add_library(engine SHARED
     src/core/logger/logger.cpp
     src/core/layer/layer.cpp
     src/core/layer/layer_stack.cpp
+    src/core/imgui/imgui_layer.cpp
     src/platform/linux/linux_window.cpp 
 )
 add_library(jc2d::engine ALIAS engine)
@@ -73,4 +78,5 @@ target_link_libraries(engine PUBLIC
     entt
     stb_image
     spdlog
+    imgui
 ) 

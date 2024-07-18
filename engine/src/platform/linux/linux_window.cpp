@@ -45,6 +45,10 @@ namespace JC2D {
 
         m_window = glfwCreateWindow((int)props.width, (int)props.height, m_data.title.c_str(), nullptr, nullptr);
         glfwMakeContextCurrent(m_window);
+
+        int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+        JC2D_ASSERT_MSG(status, "Failed to load glad.")
+
         glfwSetWindowUserPointer(m_window, &m_data);
         setVSync(true);
 

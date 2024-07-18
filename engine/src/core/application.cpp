@@ -27,7 +27,7 @@ namespace JC2D {
         m_window = std::unique_ptr<Window>(Window::create());
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
-        m_layerStack.pushOverlay(new JC2D::ImguiLayer());
+        m_layerStack.pushOverlay(&m_imguiLayer);
     }
     Application::~Application() {}
 

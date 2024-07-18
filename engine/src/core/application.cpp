@@ -36,7 +36,7 @@ namespace JC2D {
     void Application::onEvent(Event& event) {
         EventDispatcher dispatcher(event);
 
-        dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::onWindowClose, this, std::placeholders::_1));
+        dispatcher.dispatch<WindowCloseEvent>(std::bind(&Application::onWindowClose, this, std::placeholders::_1));
 
         for (auto it = m_layerStack.end(); it != m_layerStack.begin();) {
             (*--it)->onEvent(event);

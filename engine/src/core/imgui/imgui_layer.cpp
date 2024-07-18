@@ -4,6 +4,9 @@
 #include "../application.h"
 #include "../logger/logger.h"
 
+#include "../event/mouse_event.h"
+#include "../event/key_event.h"
+
 namespace JC2D {
     ImguiLayer::ImguiLayer()
         : Layer("ImguiLayer") {};
@@ -44,7 +47,23 @@ namespace JC2D {
     void ImguiLayer::onFixedUpdate() {}
 
     void ImguiLayer::onEvent(Event& event) {
-        JC2D_CORE_INFO("Imgui: {0}", event.toString());
+        ImGuiIO& io = ImGui::GetIO();
+
+        if (io.WantCaptureMouse) {
+            EventDispatcher dispatcher(event);
+
+            dispatcher.Dispatch<MouseButtonPressedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
+            dispatcher.Dispatch<MouseButtonReleasedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
+            dispatcher.Dispatch<MouseMovedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
+            dispatcher.Dispatch<MouseScrolledEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
+        }
+
+        if (io.WantCaptureKeyboard) {
+            EventDispatcher dispatcher(event);
+
+            dispatcher.Dispatch<KeyPressedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
+            dispatcher.Dispatch<KeyReleasedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
+        }
     };
 
 }  // namespace JC2D

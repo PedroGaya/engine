@@ -32,6 +32,8 @@
 *.app
 
 # Build
-
 .cache
 build
+
+# Imgui
+imgui.ini

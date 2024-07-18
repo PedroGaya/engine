@@ -36,8 +36,6 @@ namespace JC2D {
 
         dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::onWindowClose, this, std::placeholders::_1));
 
-        JC2D_CORE_INFO("{0}", event.toString());
-
         for (auto it = m_layerStack.end(); it != m_layerStack.begin();) {
             (*--it)->onEvent(event);
             if (event.handled) {

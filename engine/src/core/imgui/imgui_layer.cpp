@@ -2,6 +2,7 @@
 #include "./imgui_layer.h"
 
 #include "../application.h"
+#include "../logger/logger.h"
 
 namespace JC2D {
     ImguiLayer::ImguiLayer()
@@ -41,6 +42,9 @@ namespace JC2D {
     };
 
     void ImguiLayer::onFixedUpdate() {}
-    void ImguiLayer::onEvent(Event& event) {};
+
+    void ImguiLayer::onEvent(Event& event) {
+        JC2D_CORE_INFO("Imgui: {0}", event.toString());
+    };
 
 }  // namespace JC2D

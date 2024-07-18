@@ -19,6 +19,9 @@ namespace JC2D {
         void pushLayer(Layer* layer) { m_layerStack.pushLayer(layer); };
         void pusOverlay(Layer* overlay) { m_layerStack.pushOverlay(overlay); };
 
+        inline static Application& get() { return *s_instance; }
+        inline Window& getWindow() { return *m_window; }
+
        public:  // Game loop code
         bool isPaused() { return m_paused; };
         bool pause() {
@@ -49,6 +52,8 @@ namespace JC2D {
        private:
         std::unique_ptr<Window> m_window;
         LayerStack m_layerStack;
+
+        static Application* s_instance;
 
        private:  // Game loop vars
         double m_totalTimeElapsed;

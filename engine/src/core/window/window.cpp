@@ -1,5 +1,5 @@
 #include "../../jc2dpch.h"
-#include "linux_window.h"
+#include "window.h"
 
 #include "../../core/logger/logger.h"
 #include "../../asserts.h"
@@ -15,18 +15,14 @@ namespace JC2D {
     };
 
     Window* Window::create(const WindowProps& props) {
-        return new LinuxWindow(props);
+        return new Window(props);
     }
 
-    LinuxWindow::LinuxWindow(const WindowProps& props) {
-        init(props);
-    }
-
-    LinuxWindow::~LinuxWindow() {
+    Window::~Window() {
         shutdown();
     }
 
-    void LinuxWindow::init(const WindowProps& props) {
+    void Window::init(const WindowProps& props) {
         m_data.title = props.title;
         m_data.width = props.width;
         m_data.height = props.height;
@@ -125,16 +121,16 @@ namespace JC2D {
         });
     }
 
-    void LinuxWindow::shutdown() {
+    void Window::shutdown() {
         glfwDestroyWindow(m_window);
     }
 
-    void LinuxWindow::onUpdate() {
+    void Window::onUpdate() {
         glfwPollEvents();
         glfwSwapBuffers(m_window);
     }
 
-    void LinuxWindow::setVSync(bool enabled) {
+    void Window::setVSync(bool enabled) {
         if (enabled) {
             glfwSwapInterval(1);
         } else {
@@ -144,7 +140,7 @@ namespace JC2D {
         m_data.VSync = enabled;
     }
 
-    bool LinuxWindow::isVSync() const {
+    bool Window::isVSync() const {
         return m_data.VSync;
     }
 

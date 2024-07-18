@@ -24,7 +24,9 @@ namespace JC2D {
         m_deltaTime = 0.;
         m_fixedDeltaTime = 0.0083;
 
-        m_window = std::unique_ptr<Window>(Window::create());
+        auto windowProps = new WindowProps();
+        m_window = std::unique_ptr<Window>(Window::create(*windowProps));
+        m_window->init(*windowProps);
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
         m_layerStack.pushOverlay(new ImguiLayer());

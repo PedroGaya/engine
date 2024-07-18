@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../defines.h"
-#include "window.h"
+#include "window/window.h"
 
 #include "./event/application_event.h"
 #include "./layer/layer_stack.h"

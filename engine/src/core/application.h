@@ -52,9 +52,7 @@ namespace JC2D {
        private:
         std::unique_ptr<Window> m_window;
 
-        ImguiLayer m_imguiLayer;
         LayerStack m_layerStack;
-
         static Application* s_instance;
 
        private:  // Game loop vars

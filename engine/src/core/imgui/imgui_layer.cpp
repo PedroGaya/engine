@@ -53,17 +53,17 @@ namespace JC2D {
         if (io.WantCaptureMouse) {
             EventDispatcher dispatcher(event);
 
-            dispatcher.dispatch<MouseButtonPressedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
-            dispatcher.dispatch<MouseButtonReleasedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
-            dispatcher.dispatch<MouseMovedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
-            dispatcher.dispatch<MouseScrolledEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
+            dispatcher.dispatch<MouseButtonPressedEvent>([](Event& event) { return true; });
+            dispatcher.dispatch<MouseButtonReleasedEvent>([](Event& event) { return true; });
+            dispatcher.dispatch<MouseMovedEvent>([](Event& event) { return true; });
+            dispatcher.dispatch<MouseScrolledEvent>([](Event& event) { return true; });
         }
 
         if (io.WantCaptureKeyboard) {
             EventDispatcher dispatcher(event);
 
-            dispatcher.dispatch<KeyPressedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
-            dispatcher.dispatch<KeyReleasedEvent>([](Event& event) { JC2D_CORE_INFO("Imgui: {0}", event.toString()); return true; });
+            dispatcher.dispatch<KeyPressedEvent>([](Event& event) { return true; });
+            dispatcher.dispatch<KeyReleasedEvent>([](Event& event) { return true; });
         }
     };
 

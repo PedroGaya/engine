@@ -13,13 +13,17 @@ namespace JC2D {
 
         double getAverageFPS();
         double getAverageDeltaTimeMilliseconds();
+        inline double getUptimeSeconds() { return m_uptime; };
 
         void pushFrameTime(double frame_time);
+        inline void setUptime(double uptime) { m_uptime = uptime; };
 
        private:
         bool m_enabled;
 
         unsigned int m_maxFrameTimes;
         std::vector<double> m_frameTimesMilliseconds;
+
+        double m_uptime;
     };
 }  // namespace JC2D

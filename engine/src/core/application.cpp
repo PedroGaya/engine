@@ -106,6 +106,7 @@ namespace JC2D {
 
             if (m_metrics->isEnabled()) {
                 m_metrics->pushFrameTime(m_deltaTime);
+                m_metrics->setUptime(m_totalTimeElapsed);
             }
         };
     }

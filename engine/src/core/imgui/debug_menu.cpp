@@ -7,8 +7,8 @@ namespace JC2D {
         Metrics& metrics = Application::get().getMetrics();
 
         ImGui::Begin("Application Info");
-        ImGui::Text("dt: %.2f ms", metrics.getAverageDeltaTimeMilliseconds());
-        ImGui::Text("FPS: %.1f", metrics.getAverageFPS());
+        ImGui::Text("Uptime: %is", (int)metrics.getUptimeSeconds());
+        ImGui::Text("FPS: %.1f | dt: %.2fms", metrics.getAverageFPS(), metrics.getAverageDeltaTimeMilliseconds());
         ImGui::End();
     };
 }  // namespace JC2D

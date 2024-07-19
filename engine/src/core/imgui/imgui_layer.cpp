@@ -7,6 +7,8 @@
 #include "../event/mouse_event.h"
 #include "../event/key_event.h"
 
+#include "./debug_menu.h"
+
 namespace JC2D {
     ImguiLayer::ImguiLayer()
         : Layer("ImguiLayer") {};
@@ -39,7 +41,8 @@ namespace JC2D {
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        ImGui::ShowDemoWindow();
+        // ImGui::ShowDemoWindow();
+        DebugMenu::renderApplicationInfo();
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

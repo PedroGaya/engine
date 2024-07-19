@@ -30,6 +30,8 @@ namespace JC2D {
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
         m_layerStack.pushOverlay(new ImguiLayer());
+
+        m_metrics = std::unique_ptr<Metrics>(new Metrics());
     }
     Application::~Application() {}
 
@@ -101,6 +103,10 @@ namespace JC2D {
             update();
 
             m_globalFrameCounter += 1;
+
+            if (m_metrics->isEnabled()) {
+                m_metrics->pushFrameTime(m_deltaTime);
+            }
         };
     }
 }  // namespace JC2D

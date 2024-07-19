@@ -6,6 +6,8 @@
 #include "./event/application_event.h"
 #include "./layer/layer_stack.h"
 
+#include "./metrics.h"
+
 namespace JC2D {
     class JC2D_API Application {
        public:
@@ -21,6 +23,11 @@ namespace JC2D {
 
         inline static Application& get() { return *s_instance; }
         inline Window& getWindow() { return *m_window; }
+        inline Metrics& getMetrics() { return *m_metrics; }
+
+        inline double getDeltaTime() { return m_deltaTime * 1000; }
+        inline double getFixedDeltaTime() { return m_fixedDeltaTime * 1000; }
+        inline double getFPS() { return 1 / m_deltaTime; }
 
        public:  // Game loop code
         bool isPaused() { return m_paused; };
@@ -51,6 +58,7 @@ namespace JC2D {
 
        private:
         std::unique_ptr<Window> m_window;
+        std::unique_ptr<Metrics> m_metrics;
 
         LayerStack m_layerStack;
         static Application* s_instance;

@@ -7,7 +7,7 @@ class SampleLayer : public JC2D::Layer {
     }
 
     void onEvent(JC2D::Event& event) override {
-        JC2D_INFO("{0}", event.toString());
+        // JC2D_INFO("{0}", event.toString());
     }
 };
 

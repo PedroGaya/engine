@@ -5,6 +5,8 @@
 
 namespace JC2D {
     class JC2D_API Input {
+        friend class Application;
+
        public:
         static bool isKeyPressed(int keycode);
         static bool isKeyReleased(int keycode);
@@ -20,6 +22,7 @@ namespace JC2D {
         static double getMouseX();
         static double getMouseY();
 
+       private:
         static void pushToBuffer(int action);
         static void clearBuffer();
 

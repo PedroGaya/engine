@@ -1,4 +1,5 @@
 #include "./application.h"
+#include "./input.h"
 
 #include "./logger/logger.h"
 #include "../asserts.h"
@@ -40,6 +41,9 @@ namespace JC2D {
 
         dispatcher.dispatch<WindowCloseEvent>(std::bind(&Application::onWindowClose, this, std::placeholders::_1));
 
+        dispatcher.dispatch<KeyPressedEvent>(std::bind(&Application::onKeyPressedEvent, this, std::placeholders::_1));
+        dispatcher.dispatch<MouseButtonPressedEvent>(std::bind(&Application::onMouseButtonPressedEvent, this, std::placeholders::_1));
+
         for (auto it = m_layerStack.end(); it != m_layerStack.begin();) {
             (*--it)->onEvent(event);
             if (event.handled) {
@@ -52,6 +56,24 @@ namespace JC2D {
         stop();
         return true;
     };
+    bool Application::onKeyPressedEvent(KeyPressedEvent& event) {
+        if (event.GetRepeatCount() == 0) {
+            JC2D::Input::pushToBuffer(event.getKeyCode());
+        }
+        return false;
+    }
+    bool Application::onKeyReleasedEvent(KeyReleasedEvent& event) {
+        JC2D::Input::pushToBuffer(event.getKeyCode());
+        return false;
+    }
+    bool Application::onMouseButtonPressedEvent(MouseButtonPressedEvent& event) {
+        JC2D::Input::pushToBuffer(event.getMouseButton());
+        return false;
+    }
+    bool Application::onMouseButtonReleasedEvent(MouseButtonReleasedEvent& event) {
+        JC2D::Input::pushToBuffer(event.getMouseButton());
+        return false;
+    }
 
     // used for logic
     void Application::fixedUpdate() {
@@ -91,6 +113,8 @@ namespace JC2D {
             m_deltaTime = frameTime.count();
             accumulator += m_deltaTime;
 
+            m_window->pollEvents();
+
             while (accumulator >= m_fixedDeltaTime) {
                 fixedUpdate();
                 m_totalTimeElapsed += m_fixedDeltaTime;
@@ -108,6 +132,8 @@ namespace JC2D {
                 m_metrics->pushFrameTime(m_deltaTime);
                 m_metrics->setUptime(m_totalTimeElapsed);
             }
+
+            JC2D::Input::clearBuffer();
         };
     }
 }  // namespace JC2D

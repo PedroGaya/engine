@@ -4,6 +4,8 @@
 #include "window/window.h"
 
 #include "./event/application_event.h"
+#include "./event/key_event.h"
+#include "./event/mouse_event.h"
 #include "./layer/layer_stack.h"
 
 #include "./metrics.h"
@@ -17,6 +19,11 @@ namespace JC2D {
         void onEvent(Event& event);
 
         bool onWindowClose(WindowCloseEvent& event);
+
+        bool onKeyPressedEvent(KeyPressedEvent& event);
+        bool onKeyReleasedEvent(KeyReleasedEvent& event);
+        bool onMouseButtonPressedEvent(MouseButtonPressedEvent& event);
+        bool onMouseButtonReleasedEvent(MouseButtonReleasedEvent& event);
 
         void pushLayer(Layer* layer) { m_layerStack.pushLayer(layer); };
         void pusOverlay(Layer* overlay) { m_layerStack.pushOverlay(overlay); };

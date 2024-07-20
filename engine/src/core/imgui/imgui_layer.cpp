@@ -4,9 +4,6 @@
 #include "../application.h"
 #include "../logger/logger.h"
 
-#include "../event/mouse_event.h"
-#include "../event/key_event.h"
-
 #include "./debug_menu.h"
 
 namespace JC2D {

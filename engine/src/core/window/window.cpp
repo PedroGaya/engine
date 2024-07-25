@@ -125,8 +125,11 @@ namespace JC2D {
         glfwDestroyWindow(m_window);
     }
 
-    void Window::onUpdate() {
+    void Window::pollEvents() {
         glfwPollEvents();
+    }
+
+    void Window::onUpdate() {
         glfwSwapBuffers(m_window);
     }
 

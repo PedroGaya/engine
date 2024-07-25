@@ -20,6 +20,7 @@ namespace JC2D {
         virtual ~Window();
 
         virtual void onUpdate();
+        virtual void pollEvents();
 
         inline unsigned int getWidth() const { return m_data.width; }
         inline unsigned int getHeight() const { return m_data.height; }

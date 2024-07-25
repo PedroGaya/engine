@@ -6,6 +6,7 @@
 #include <memory>
 #include <vector>
 #include <numeric>
+#include <utility>
 
 #ifdef JC2D_PLATFORM_WINDOWS
 #include <Windows.h>

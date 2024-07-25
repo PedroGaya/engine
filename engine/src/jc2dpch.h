@@ -7,6 +7,9 @@
 #include <vector>
 #include <numeric>
 #include <utility>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
 #ifdef JC2D_PLATFORM_WINDOWS
 #include <Windows.h>

@@ -48,6 +48,8 @@ namespace JC2D {
         glfwSetWindowUserPointer(m_window, &m_data);
         setVSync(true);
 
+        glViewport(0, 0, props.width, props.height);
+
         // Event callback setup
 
         glfwSetWindowSizeCallback(m_window, [](GLFWwindow* window, int width, int height) {
@@ -55,6 +57,8 @@ namespace JC2D {
 
             data.width = width;
             data.height = height;
+
+            glViewport(0, 0, width, height);
 
             WindowResizeEvent event(width, height);
             data.callback(event);

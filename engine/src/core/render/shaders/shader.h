@@ -5,7 +5,7 @@ namespace JC2D {
     class JC2D_API Shader {
        public:
         Shader(std::string name) : m_name(name) {};
-        virtual ~Shader() = default;
+        inline ~Shader() { glDeleteProgram(m_id); };
 
         virtual void compileShader(std::string path, GLenum shaderType);
         virtual unsigned int createProgram();

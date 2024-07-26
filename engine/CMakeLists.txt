@@ -61,6 +61,7 @@ add_library(engine SHARED
     src/core/imgui/imgui_layer.cpp
     src/core/imgui/debug_menu.cpp
     src/core/render/buffers.cpp
+    src/core/render/debug_render_layer.cpp
     src/core/render/shaders/shader.cpp
     src/core/window/window.cpp 
 )

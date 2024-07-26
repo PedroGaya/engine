@@ -4,6 +4,8 @@
 #include "../application.h"
 #include "../logger/logger.h"
 
+#include "./buffers.h"
+
 namespace JC2D {
     void DebugRenderLayer::onAttach() {
         m_shader = new Shader("sample");
@@ -26,20 +28,30 @@ namespace JC2D {
             0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f     // top
         };
 
-        unsigned int vertexBuffer;
-        glGenBuffers(1, &vertexBuffer);
-        glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-        glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+        BufferLayout layout = {
+            {RenderDataType::Float3, "aPos"},
+            {RenderDataType::Float3, "aColor"},
+        };
+        VertexBuffer* vertexBuffer = new VertexBuffer(vertices, sizeof(vertices), layout);
 
-        // position attribute
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
-        glEnableVertexAttribArray(0);
-        // color attribute
-        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
-        glEnableVertexAttribArray(1);
+        int index = 0;
+        for (auto& element : layout) {
+            glEnableVertexAttribArray(index);
+            glVertexAttribPointer(
+                index,
+                element.count(),
+                JC2D_FLOAT,
+                element.normalized,
+                layout.getStride(),
+                (const void*)element.offset);
+            index++;
+        }
+
+        unsigned int indices[3] = {0, 1, 2};
+        int count = sizeof(indices) / sizeof(unsigned int);
+        IndexBuffer* indexBuffer = new IndexBuffer(indices, count);
 
         glBindVertexArray(0);
-
         glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     };
     void DebugRenderLayer::onDetach() {
@@ -49,8 +61,7 @@ namespace JC2D {
         m_shader->use();
 
         glBindVertexArray(m_vertexArray);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
-        glDrawArrays(GL_TRIANGLES, 3, 3);
+        glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
     };
     void DebugRenderLayer::onFixedUpdate() {};
     void DebugRenderLayer::onEvent(Event& event) {};

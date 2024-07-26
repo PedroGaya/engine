@@ -11,7 +11,7 @@
             "program": "${workspaceFolder}/build/debug/testbed.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/build/",
+            "cwd": "${workspaceFolder}/",
             "environment": [],
             "console": "newExternalWindow",
         },

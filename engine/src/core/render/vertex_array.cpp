@@ -1,5 +1,7 @@
 #include "./vertex_array.h"
 
+#define BUFFER_OFFSET(i) (static_cast<char*>(0) + (i))
+
 namespace JC2D {
     VertexArray::VertexArray() {
         glCreateVertexArrays(1, &m_id);
@@ -30,12 +32,13 @@ namespace JC2D {
                 JC2D_FLOAT,
                 element.normalized,
                 layout.getStride(),
-                (const void*)element.offset);
+                BUFFER_OFFSET(element.offset));  // Suppresses a warning about converting int32 to void*
             index++;
         }
 
         m_vertexBuffers.push_back(vertexBuffer);
     };
+
     void VertexArray::setIndexBuffer(const std::shared_ptr<IndexBuffer>& indexBuffer) {
         glBindVertexArray(m_id);
         indexBuffer->bind();

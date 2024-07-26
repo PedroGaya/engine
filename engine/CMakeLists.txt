@@ -61,6 +61,7 @@ add_library(engine SHARED
     src/core/imgui/imgui_layer.cpp
     src/core/imgui/debug_menu.cpp
     src/core/render/shaders/shader.cpp
+    src/core/render/debug_render_layer.cpp
     src/core/window/window.cpp 
 )
 add_library(jc2d::engine ALIAS engine)

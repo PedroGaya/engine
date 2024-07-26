@@ -47,7 +47,7 @@ namespace JC2D {
         m_shader->use();
         m_vertexArray->bind();
 
-        glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
+        glDrawElements(GL_TRIANGLES, m_indexBuffer->getCount(), GL_UNSIGNED_INT, nullptr);
     };
     void DebugRenderLayer::onFixedUpdate() {};
     void DebugRenderLayer::onEvent(Event& event) {};

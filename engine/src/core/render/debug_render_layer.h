@@ -2,6 +2,8 @@
 #include "../layer/layer.h"
 #include "./shaders/shader.h"
 
+#include "./vertex_array.h"
+
 namespace JC2D {
     class JC2D_API DebugRenderLayer : public Layer {
        public:
@@ -15,9 +17,10 @@ namespace JC2D {
         void onEvent(Event& event);
 
        private:
-        unsigned int m_vertexBuffer;
-        unsigned int m_vertexArray;
+        std::shared_ptr<Shader> m_shader;
 
-        Shader* m_shader;
+        std::shared_ptr<VertexArray> m_vertexArray;
+        std::shared_ptr<VertexBuffer> m_vertexBuffer;
+        std::shared_ptr<IndexBuffer> m_indexBuffer;
     };
 }  // namespace JC2D

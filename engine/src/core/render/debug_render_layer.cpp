@@ -4,21 +4,19 @@
 #include "../application.h"
 #include "../logger/logger.h"
 
-#include "./buffers.h"
-
 namespace JC2D {
     void DebugRenderLayer::onAttach() {
-        m_shader = new Shader("sample");
+        m_shader = std::shared_ptr<Shader>(new Shader("sample"));
 
         m_shader->compileShader("./engine/src/shaders/sample/sample.vert", GL_VERTEX_SHADER);
         m_shader->compileShader("./engine/src/shaders/sample/sample.frag", GL_FRAGMENT_SHADER);
         m_shader->createProgram();
         m_shader->use();
 
-        unsigned int vertexArray;
-        glGenVertexArrays(1, &vertexArray);
-        m_vertexArray = vertexArray;
-        glBindVertexArray(vertexArray);
+        auto vertexArray = new VertexArray();
+
+        m_vertexArray = std::shared_ptr<VertexArray>(vertexArray);
+        m_vertexArray->bind();
 
         // Triangle!
         float vertices[] = {
@@ -29,38 +27,26 @@ namespace JC2D {
         };
 
         BufferLayout layout = {
-            {RenderDataType::Float3, "aPos"},
-            {RenderDataType::Float3, "aColor"},
+            {RenderDataType::Float3, "aPos"},    // layout (location = 0)
+            {RenderDataType::Float3, "aColor"},  // layout (location = 1)
         };
-        VertexBuffer* vertexBuffer = new VertexBuffer(vertices, sizeof(vertices), layout);
-
-        int index = 0;
-        for (auto& element : layout) {
-            glEnableVertexAttribArray(index);
-            glVertexAttribPointer(
-                index,
-                element.count(),
-                JC2D_FLOAT,
-                element.normalized,
-                layout.getStride(),
-                (const void*)element.offset);
-            index++;
-        }
+        auto vertexBuffer = new VertexBuffer(vertices, sizeof(vertices), layout);
+        m_vertexBuffer = std::shared_ptr<VertexBuffer>(vertexBuffer);
+        m_vertexArray->addVertexBuffer(m_vertexBuffer);
 
         unsigned int indices[3] = {0, 1, 2};
         int count = sizeof(indices) / sizeof(unsigned int);
-        IndexBuffer* indexBuffer = new IndexBuffer(indices, count);
+        auto indexBuffer = new IndexBuffer(indices, count);
+        m_indexBuffer = std::shared_ptr<IndexBuffer>(indexBuffer);
 
-        glBindVertexArray(0);
-        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+        m_vertexArray->unbind();
     };
-    void DebugRenderLayer::onDetach() {
-        delete m_shader;
-    };
+
+    void DebugRenderLayer::onDetach() {};
     void DebugRenderLayer::onUpdate() {
         m_shader->use();
+        m_vertexArray->bind();
 
-        glBindVertexArray(m_vertexArray);
         glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
     };
     void DebugRenderLayer::onFixedUpdate() {};

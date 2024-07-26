@@ -30,14 +30,16 @@ namespace JC2D {
             {RenderDataType::Float3, "aPos"},    // layout (location = 0)
             {RenderDataType::Float3, "aColor"},  // layout (location = 1)
         };
-        auto vertexBuffer = new VertexBuffer(vertices, sizeof(vertices), layout);
-        m_vertexBuffer = std::shared_ptr<VertexBuffer>(vertexBuffer);
-        m_vertexArray->addVertexBuffer(m_vertexBuffer);
+
+        // Can't use std::make_shared due to initializer lists confusing the constructor call.
+        auto vertexBuffer = std::shared_ptr<VertexBuffer>(new VertexBuffer(vertices, sizeof(vertices), layout));
+        m_vertexArray->addVertexBuffer(vertexBuffer);
 
         unsigned int indices[3] = {0, 1, 2};
         int count = sizeof(indices) / sizeof(unsigned int);
-        auto indexBuffer = new IndexBuffer(indices, count);
-        m_indexBuffer = std::shared_ptr<IndexBuffer>(indexBuffer);
+
+        auto indexBuffer = std::make_shared<IndexBuffer>(indices, count);
+        m_vertexArray->setIndexBuffer(indexBuffer);
 
         m_vertexArray->unbind();
     };
@@ -47,7 +49,7 @@ namespace JC2D {
         m_shader->use();
         m_vertexArray->bind();
 
-        glDrawElements(GL_TRIANGLES, m_indexBuffer->getCount(), GL_UNSIGNED_INT, nullptr);
+        glDrawElements(GL_TRIANGLES, m_vertexArray->getIndexBuffer()->getCount(), GL_UNSIGNED_INT, nullptr);
     };
     void DebugRenderLayer::onFixedUpdate() {};
     void DebugRenderLayer::onEvent(Event& event) {};

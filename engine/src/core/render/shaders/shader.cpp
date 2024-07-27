@@ -3,19 +3,50 @@
 
 namespace JC2D {
     void Shader::compileShader(std::string path, GLenum shaderType) {
-        std::string sourceCode;
-        std::ifstream file;
+        std::string sourceCode = R"()";
+        // std::ifstream file;
 
-        file.exceptions(std::ifstream::failbit | std::ifstream::badbit);
-        try {
-            file.open(path);
-            std::stringstream fileStream;
-            fileStream << file.rdbuf();
-            file.close();
-            sourceCode = fileStream.str();
-        } catch (std::ifstream::failure e) {
-            JC2D_CORE_ERROR("IO error when reading from file {0}, msg: {1}", path, e.what());
+        // file.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+        // try {
+        //     file.open(path);
+        //     std::stringstream fileStream;
+        //     fileStream << file.rdbuf();
+        //     file.close();
+        //     sourceCode = fileStream.str();
+        // } catch (std::ifstream::failure e) {
+        //     JC2D_CORE_ERROR("IO error when reading from file {0}, msg: {1}", path, e.what());
+        // }
+
+        if (path.find("vert") != std::string::npos) {
+            sourceCode = R"(
+
+            #version 330 core
+
+            layout (location = 0) in vec3 aPos;   // the position variable has attribute position 0
+            layout (location = 1) in vec3 aColor; // the color variable has attribute position 1
+            
+            out vec3 color; // output a color to the fragment shader
+
+            void main() {
+                gl_Position = vec4(aPos, 1.0);
+                color = aColor; // set color to the input color we got from the vertex data
+            }
+
+            )";
+        } else if (path.find("frag") != std::string::npos) {
+            sourceCode = R"(
+
+            #version 330 core
+            out vec4 FragColor;  
+            in vec3 color;
+            
+            void main() {
+                FragColor = vec4(color, 1.0);
+            }
+
+            )";
         }
+
         const char* shaderCode = sourceCode.c_str();
 
         unsigned int id;

@@ -13,8 +13,7 @@ namespace JC2D {
         m_shader->createProgram();
         m_shader->use();
 
-        auto vertexArray = new VertexArray();
-        m_vertexArray = std::shared_ptr<VertexArray>(vertexArray);
+        m_vertexArray = VertexArray::create();
         m_vertexArray->bind();
 
         // Triangle!

@@ -3,7 +3,7 @@
 namespace JC2D {
     class JC2D_API VertexArray {
        public:
-        VertexArray();
+        static std::shared_ptr<VertexArray> create();
         virtual ~VertexArray();
 
         virtual void bind();
@@ -16,6 +16,7 @@ namespace JC2D {
         inline std::shared_ptr<IndexBuffer> getIndexBuffer() const { return m_indexBuffer; }
 
        private:
+        VertexArray();
         uint32_t m_id;
 
         std::vector<std::shared_ptr<VertexBuffer>> m_vertexBuffers;

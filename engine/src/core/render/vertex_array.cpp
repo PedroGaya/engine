@@ -3,6 +3,9 @@
 #define BUFFER_OFFSET(i) (static_cast<char*>(0) + (i))
 
 namespace JC2D {
+    std::shared_ptr<VertexArray> VertexArray::create() {
+        return std::shared_ptr<VertexArray>(new VertexArray());
+    };
     VertexArray::VertexArray() {
         glCreateVertexArrays(1, &m_id);
     };

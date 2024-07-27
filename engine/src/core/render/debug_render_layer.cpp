@@ -30,14 +30,14 @@ namespace JC2D {
             {RenderDataType::Float3, "aColor"},  // layout (location = 1)
         };
 
-        auto vertexBuffer = new VertexBuffer(vertices, sizeof(vertices), layout);
-        m_vertexArray->addVertexBuffer(std::shared_ptr<VertexBuffer>(vertexBuffer));
+        auto vertexBuffer = VertexBuffer::create(vertices, sizeof(vertices), layout);
+        m_vertexArray->addVertexBuffer(vertexBuffer);
 
         unsigned int indices[3] = {0, 1, 2};
         int count = sizeof(indices) / sizeof(unsigned int);
 
-        auto indexBuffer = new IndexBuffer(indices, count);
-        m_vertexArray->setIndexBuffer(std::shared_ptr<IndexBuffer>(indexBuffer));
+        auto indexBuffer = IndexBuffer::create(indices, count);
+        m_vertexArray->setIndexBuffer(indexBuffer);
 
         m_vertexArray->unbind();
     };

@@ -1,6 +1,11 @@
 #include "./buffers.h"
 
 namespace JC2D {
+    // Vertex Buffer
+
+    std::shared_ptr<VertexBuffer> VertexBuffer::create(float* vertices, uint32_t size, BufferLayout layout) {
+        return std::shared_ptr<VertexBuffer>(new VertexBuffer(vertices, size, layout));
+    }
     VertexBuffer::VertexBuffer(float* vertices, uint32_t size, BufferLayout layout)
         : m_layout(layout), m_vertices(vertices) {
         glCreateBuffers(1, &m_id);
@@ -18,6 +23,11 @@ namespace JC2D {
         glBindBuffer(GL_ARRAY_BUFFER, 0);
     };
 
+    // Index Buffer
+
+    std::shared_ptr<IndexBuffer> IndexBuffer::create(uint32_t* indices, uint32_t count) {
+        return std::shared_ptr<IndexBuffer>(new IndexBuffer(indices, count));
+    }
     IndexBuffer::IndexBuffer(uint32_t* indices, uint32_t count)
         : m_count(count) {
         glCreateBuffers(1, &m_id);

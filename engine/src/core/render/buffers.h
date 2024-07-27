@@ -81,7 +81,7 @@ namespace JC2D {
 
     class JC2D_API VertexBuffer {
        public:
-        VertexBuffer(float* vertices, uint32_t size, BufferLayout layout);
+        static std::shared_ptr<VertexBuffer> create(float* vertices, uint32_t size, BufferLayout layout);
         virtual ~VertexBuffer();
 
         virtual void bind();
@@ -91,13 +91,15 @@ namespace JC2D {
         inline BufferLayout getLayout() const { return m_layout; }
 
        private:
+        VertexBuffer(float* vertices, uint32_t size, BufferLayout layout);
+
         uint32_t m_id = 0;
         BufferLayout m_layout;
         float* m_vertices;
     };
     class JC2D_API IndexBuffer {
        public:
-        IndexBuffer(uint32_t* indices, uint32_t count);
+        static std::shared_ptr<IndexBuffer> create(uint32_t* indices, uint32_t count);
         virtual ~IndexBuffer();
 
         void bind();
@@ -106,6 +108,8 @@ namespace JC2D {
         inline uint32_t getCount() const { return m_count; }
 
        private:
+        IndexBuffer(uint32_t* indices, uint32_t count);
+
         uint32_t m_id = 0;
         uint32_t m_count;
     };

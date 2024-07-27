@@ -6,7 +6,7 @@
 
 namespace JC2D {
     void DebugRenderLayer::onAttach() {
-        m_shader = std::shared_ptr<Shader>(new Shader("sample"));
+        m_shader = Shader::create("sample");
 
         m_shader->compileShader("./engine/src/shaders/sample/sample.vert", GL_VERTEX_SHADER);
         m_shader->compileShader("./engine/src/shaders/sample/sample.frag", GL_FRAGMENT_SHADER);

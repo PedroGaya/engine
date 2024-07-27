@@ -14,7 +14,6 @@ namespace JC2D {
         m_shader->use();
 
         auto vertexArray = new VertexArray();
-
         m_vertexArray = std::shared_ptr<VertexArray>(vertexArray);
         m_vertexArray->bind();
 
@@ -31,15 +30,14 @@ namespace JC2D {
             {RenderDataType::Float3, "aColor"},  // layout (location = 1)
         };
 
-        // Can't use std::make_shared due to initializer lists confusing the constructor call.
-        auto vertexBuffer = std::shared_ptr<VertexBuffer>(new VertexBuffer(vertices, sizeof(vertices), layout));
-        m_vertexArray->addVertexBuffer(vertexBuffer);
+        auto vertexBuffer = new VertexBuffer(vertices, sizeof(vertices), layout);
+        m_vertexArray->addVertexBuffer(std::shared_ptr<VertexBuffer>(vertexBuffer));
 
         unsigned int indices[3] = {0, 1, 2};
         int count = sizeof(indices) / sizeof(unsigned int);
 
-        auto indexBuffer = std::make_shared<IndexBuffer>(indices, count);
-        m_vertexArray->setIndexBuffer(indexBuffer);
+        auto indexBuffer = new IndexBuffer(indices, count);
+        m_vertexArray->setIndexBuffer(std::shared_ptr<IndexBuffer>(indexBuffer));
 
         m_vertexArray->unbind();
     };

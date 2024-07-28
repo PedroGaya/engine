@@ -1,3 +1,5 @@
+#pragma once
+
 #include "../../jc2dpch.h"
 #include "./vertex_array.h"
 

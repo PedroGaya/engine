@@ -4,7 +4,7 @@
 namespace JC2D {
     class JC2D_API Shader {
        public:
-        static std::shared_ptr<Shader> create(std::string name) { return std::make_shared<Shader>(name); };
+        static std::shared_ptr<Shader> create(std::string name) { return std::shared_ptr<Shader>(new Shader(name)); };
         inline ~Shader() { glDeleteProgram(m_id); };
 
         virtual void compileShader(std::string path, GLenum shaderType);

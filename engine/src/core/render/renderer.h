@@ -3,9 +3,10 @@
 
 namespace JC2D {
     class JC2D_API Renderer {
-        inline static void clear();
-        inline static void setClearColor(const glm::vec4& color);
+       public:
+        static void clear();
+        static void setClearColor(const glm::vec4& color);
 
-        inline static void drawIndexed(const std::shared_ptr<VertexArray>& vertexArray);
+        static void drawIndexed(const std::shared_ptr<VertexArray>& vertexArray);
     };
 }  // namespace JC2D

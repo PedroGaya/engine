@@ -1,3 +1,5 @@
+#pragma once
+
 #include "./buffers.h"
 
 namespace JC2D {

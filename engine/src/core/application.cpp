@@ -1,5 +1,6 @@
 #include "./application.h"
 #include "./input.h"
+#include "./render/renderer.h"
 
 #include "./logger/logger.h"
 #include "../asserts.h"
@@ -86,8 +87,8 @@ namespace JC2D {
 
     // used for rendering
     void Application::update() {
-        glClearColor(1, 1, 1, 1);
-        glClear(GL_COLOR_BUFFER_BIT);
+        JC2D::Renderer::setClearColor({0.8, 0.8, 0.8, 0.9});
+        JC2D::Renderer::clear();
 
         for (Layer* layer : m_layerStack) {
             layer->onUpdate();

@@ -3,6 +3,7 @@
 
 #include "../application.h"
 #include "../logger/logger.h"
+#include "./renderer.h"
 
 namespace JC2D {
     void DebugRenderLayer::onAttach() {
@@ -46,7 +47,7 @@ namespace JC2D {
         m_shader->use();
         m_vertexArray->bind();
 
-        glDrawElements(GL_TRIANGLES, m_vertexArray->getIndexBuffer()->getCount(), GL_UNSIGNED_INT, nullptr);
+        JC2D::Renderer::drawIndexed(m_vertexArray);
     };
     void DebugRenderLayer::onFixedUpdate() {};
     void DebugRenderLayer::onEvent(Event& event) {};

@@ -63,6 +63,7 @@ add_library(engine SHARED
     src/core/render/buffers.cpp
     src/core/render/vertex_array.cpp
     src/core/render/debug_render_layer.cpp
+    src/core/render/renderer.cpp
     src/core/render/shaders/shader.cpp
     src/core/window/window.cpp 
 )

@@ -92,11 +92,11 @@ namespace JC2D {
             layer->onUpdate();
         }
 
-        // m_imguiLayer.begin();
+        m_imguiLayer.begin();
         for (Layer* layer : m_layerStack) {
             layer->onImguiRender();
         }
-        // m_imguiLayer.end();
+        m_imguiLayer.end();
 
         m_window->onUpdate();
     }
@@ -106,6 +106,7 @@ namespace JC2D {
         TimePoint currentTime = Clock::now();
 
         start();
+        pushOverlay(&m_imguiLayer);
 
         JC2D_CORE_INFO("Engine running");
 

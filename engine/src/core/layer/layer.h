@@ -14,6 +14,7 @@ namespace JC2D {
         virtual void onDetach() {}
         virtual void onUpdate() {}
         virtual void onFixedUpdate() {}
+        virtual void onImguiRender() {}
         virtual void onEvent(Event& event) {}
 
         inline const std::string& getName() const { return m_name; }

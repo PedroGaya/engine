@@ -1,3 +1,5 @@
+#pragma once
+
 #include "../../jc2dpch.h"
 #include "../layer/layer.h"
 
@@ -7,11 +9,16 @@ namespace JC2D {
         ImguiLayer();
         ~ImguiLayer();
 
-        void onAttach();
-        void onDetach();
-        void onUpdate();
-        void onFixedUpdate();
-        void onEvent(Event& event);
+        void onAttach() override;
+        void onDetach() override;
+        void onUpdate() override;
+        void onFixedUpdate() override;
+        void onImguiRender() override;
+        void onEvent(Event& event) override;
+
+        void begin();
+        void end();
+        void onImguiUpdate();
 
        private:
     };

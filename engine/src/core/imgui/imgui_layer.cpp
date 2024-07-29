@@ -33,18 +33,32 @@ namespace JC2D {
         ImGui::DestroyContext();
     };
 
-    void ImguiLayer::onUpdate() {
+    void ImguiLayer::begin() {
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-
-        // ImGui::ShowDemoWindow();
-        DebugMenu::renderApplicationInfo();
+    }
+    void ImguiLayer::end() {
+        ImGuiIO& io = ImGui::GetIO();
+        Application& app = Application::get();
+        io.DisplaySize = ImVec2((float)app.getWindow().getWidth(), (float)app.getWindow().getHeight());
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-    };
 
+        if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable) {
+            GLFWwindow* backup_current_context = glfwGetCurrentContext();
+            ImGui::UpdatePlatformWindows();
+            ImGui::RenderPlatformWindowsDefault();
+            glfwMakeContextCurrent(backup_current_context);
+        }
+    }
+
+    void ImguiLayer::onImguiRender() {
+        DebugMenu::renderApplicationInfo();
+    }
+
+    void ImguiLayer::onUpdate() {}
     void ImguiLayer::onFixedUpdate() {}
 
     void ImguiLayer::onEvent(Event& event) {

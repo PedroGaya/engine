@@ -1,10 +1,9 @@
 #include "./application.h"
 #include "./input.h"
+#include "./render/renderer.h"
 
 #include "./logger/logger.h"
 #include "../asserts.h"
-
-#include "./imgui/imgui_layer.h"
 
 using Clock = std::chrono::high_resolution_clock;
 using TimePoint = std::chrono::time_point<Clock>;
@@ -30,7 +29,9 @@ namespace JC2D {
         m_window->init(*windowProps);
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
-        m_layerStack.pushOverlay(new ImguiLayer());
+        auto imguiLayer = new ImguiLayer();
+        m_imguiLayer = *imguiLayer;
+        // pushOverlay(imguiLayer);
 
         m_metrics = std::unique_ptr<Metrics>(new Metrics());
     }
@@ -84,12 +85,19 @@ namespace JC2D {
 
     // used for rendering
     void Application::update() {
-        glClearColor(1, 1, 1, 1);
-        glClear(GL_COLOR_BUFFER_BIT);
+        JC2D::Renderer::setClearColor({0.8, 0.8, 0.8, 0.9});
+        JC2D::Renderer::clear();
 
         for (Layer* layer : m_layerStack) {
             layer->onUpdate();
         }
+
+        m_imguiLayer.begin();
+        for (Layer* layer : m_layerStack) {
+            layer->onImguiRender();
+        }
+        m_imguiLayer.end();
+
         m_window->onUpdate();
     }
 
@@ -98,6 +106,7 @@ namespace JC2D {
         TimePoint currentTime = Clock::now();
 
         start();
+        pushOverlay(&m_imguiLayer);
 
         JC2D_CORE_INFO("Engine running");
 

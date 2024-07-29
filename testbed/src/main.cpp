@@ -7,7 +7,7 @@ class SampleLayer : public JC2D::Layer {
     }
 
     void onAttach() {
-        m_shader = JC2D::Shader::create("sample");
+        m_shader = JC2D::Shader::create("Sample");
 
         m_shader->compileShader("vert", GL_VERTEX_SHADER);
         m_shader->compileShader("frag", GL_FRAGMENT_SHADER);
@@ -64,7 +64,7 @@ class SampleLayer : public JC2D::Layer {
 class Game : public JC2D::Application {
    public:
     Game() {
-        // pushLayer(new SampleLayer());
+        pushLayer(new SampleLayer());
     };
     ~Game() = default;
 };

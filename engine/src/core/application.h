@@ -9,6 +9,7 @@
 #include "./layer/layer_stack.h"
 
 #include "./metrics.h"
+#include "./imgui/imgui_layer.h"
 
 namespace JC2D {
     class JC2D_API Application {
@@ -26,7 +27,7 @@ namespace JC2D {
         bool onMouseButtonReleasedEvent(MouseButtonReleasedEvent& event);
 
         void pushLayer(Layer* layer) { m_layerStack.pushLayer(layer); };
-        void pusOverlay(Layer* overlay) { m_layerStack.pushOverlay(overlay); };
+        void pushOverlay(Layer* overlay) { m_layerStack.pushOverlay(overlay); };
 
         inline static Application& get() { return *s_instance; }
         inline Window& getWindow() { return *m_window; }
@@ -64,6 +65,7 @@ namespace JC2D {
         void fixedUpdate();
 
        private:
+        ImguiLayer m_imguiLayer;
         std::unique_ptr<Window> m_window;
         std::unique_ptr<Metrics> m_metrics;
 

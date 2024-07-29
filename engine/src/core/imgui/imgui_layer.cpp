@@ -33,18 +33,23 @@ namespace JC2D {
         ImGui::DestroyContext();
     };
 
-    void ImguiLayer::onUpdate() {
+    void ImguiLayer::begin() {
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        // ImGui::ShowDemoWindow();
         DebugMenu::renderApplicationInfo();
-
+    }
+    void ImguiLayer::end() {
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-    };
+    }
 
+    void ImguiLayer::onImguiRender() {
+        DebugMenu::renderApplicationInfo();
+    }
+
+    void ImguiLayer::onUpdate() {}
     void ImguiLayer::onFixedUpdate() {}
 
     void ImguiLayer::onEvent(Event& event) {

@@ -6,7 +6,6 @@
 #include "../asserts.h"
 
 #include "./imgui/imgui_layer.h"
-#include "./render/debug_render_layer.h"
 
 using Clock = std::chrono::high_resolution_clock;
 using TimePoint = std::chrono::time_point<Clock>;
@@ -32,8 +31,7 @@ namespace JC2D {
         m_window->init(*windowProps);
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
-        m_layerStack.pushLayer(new DebugRenderLayer());
-        m_layerStack.pushOverlay(new ImguiLayer());
+        // m_layerStack.pushOverlay(new ImguiLayer());
 
         m_metrics = std::unique_ptr<Metrics>(new Metrics());
     }

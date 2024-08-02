@@ -14,6 +14,8 @@ namespace JC2D {
         void popLayer(Layer* layer);
         void popOverlay(Layer* overlay);
 
+        void initLayers();
+
         std::vector<Layer*>::iterator begin() { return m_layers.begin(); }
         std::vector<Layer*>::iterator end() { return m_layers.end(); }
         std::vector<Layer*>::reverse_iterator rbegin() { return m_layers.rbegin(); }

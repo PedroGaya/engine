@@ -8,6 +8,7 @@ extern JC2D::Application* JC2D::createApplication();
 int main(int argc, char** argv) {
     JC2D::Log::init();
     auto app = JC2D::createApplication();
+    app->init();
     JC2D_CORE_INFO("Start");
     app->run();
     delete app;

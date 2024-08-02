@@ -17,6 +17,8 @@ namespace JC2D {
         Application();
         ~Application();
 
+        void init();
+
         void onEvent(Event& event);
 
         bool onWindowClose(WindowCloseEvent& event);

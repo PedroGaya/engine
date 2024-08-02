@@ -30,11 +30,16 @@ namespace JC2D {
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
         m_imguiLayer = new ImguiLayer();
-        pushOverlay(m_imguiLayer);
 
         m_metrics = std::unique_ptr<Metrics>(new Metrics());
     }
     Application::~Application() {}
+
+    void Application::init() {
+        JC2D_CORE_INFO("Initializing application");
+        pushOverlay(m_imguiLayer);
+        m_layerStack.initLayers();
+    }
 
     void Application::onEvent(Event& event) {
         EventDispatcher dispatcher(event);

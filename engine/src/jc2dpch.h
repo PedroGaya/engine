@@ -5,6 +5,7 @@
 #include <thread>
 #include <memory>
 #include <vector>
+#include <unordered_map>
 #include <numeric>
 #include <utility>
 #include <fstream>
@@ -27,5 +28,4 @@
 #include "backends/imgui_impl_opengl3.h"
 
 #include "entt.hpp"
-#include "stb_image.h"
 #include "spdlog/spdlog.h"

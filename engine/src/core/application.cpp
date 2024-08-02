@@ -23,6 +23,11 @@ namespace JC2D {
         m_paused = false;
         m_deltaTime = 0.;
         m_fixedDeltaTime = 0.0083;
+    }
+    Application::~Application() {}
+
+    void Application::init() {
+        JC2D_CORE_INFO("Initializing application");
 
         auto windowProps = new WindowProps();
         m_window = std::unique_ptr<Window>(Window::create(*windowProps));
@@ -30,15 +35,12 @@ namespace JC2D {
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
         m_imguiLayer = new ImguiLayer();
-
-        m_metrics = std::unique_ptr<Metrics>(new Metrics());
-    }
-    Application::~Application() {}
-
-    void Application::init() {
-        JC2D_CORE_INFO("Initializing application");
         pushOverlay(m_imguiLayer);
+        JC2D_CORE_INFO("Initializing ({0}) application layers", m_layerStack.getSize());
         m_layerStack.initLayers();
+
+        JC2D_CORE_INFO("Initializing metrics system.");
+        m_metrics = std::unique_ptr<Metrics>(new Metrics());
     }
 
     void Application::onEvent(Event& event) {

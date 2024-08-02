@@ -26,6 +26,8 @@ namespace JC2D {
         std::vector<Layer*>::const_reverse_iterator rbegin() const { return m_layers.rbegin(); }
         std::vector<Layer*>::const_reverse_iterator rend() const { return m_layers.rend(); }
 
+        inline unsigned int getSize() const { return m_layers.size(); }
+
        private:
         std::vector<Layer*> m_layers;
         unsigned int m_layerInsertIndex = 0;

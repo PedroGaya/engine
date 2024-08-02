@@ -30,7 +30,7 @@ namespace JC2D {
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
         m_imguiLayer = new ImguiLayer();
-        // pushOverlay(m_imguiLayer);
+        pushOverlay(m_imguiLayer);
 
         m_metrics = std::unique_ptr<Metrics>(new Metrics());
     }
@@ -104,7 +104,6 @@ namespace JC2D {
         double accumulator = 0.;
         TimePoint currentTime = Clock::now();
 
-        pushOverlay(m_imguiLayer);
         start();
 
         JC2D_CORE_INFO("Engine running");

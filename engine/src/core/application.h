@@ -65,7 +65,7 @@ namespace JC2D {
         void fixedUpdate();
 
        private:
-        ImguiLayer m_imguiLayer;
+        ImguiLayer* m_imguiLayer;
         std::unique_ptr<Window> m_window;
         std::unique_ptr<Metrics> m_metrics;
 

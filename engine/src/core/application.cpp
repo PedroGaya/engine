@@ -29,9 +29,8 @@ namespace JC2D {
         m_window->init(*windowProps);
         m_window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
 
-        auto imguiLayer = new ImguiLayer();
-        m_imguiLayer = *imguiLayer;
-        // pushOverlay(imguiLayer);
+        m_imguiLayer = new ImguiLayer();
+        // pushOverlay(m_imguiLayer);
 
         m_metrics = std::unique_ptr<Metrics>(new Metrics());
     }
@@ -92,11 +91,11 @@ namespace JC2D {
             layer->onUpdate();
         }
 
-        m_imguiLayer.begin();
+        m_imguiLayer->begin();
         for (Layer* layer : m_layerStack) {
             layer->onImguiRender();
         }
-        m_imguiLayer.end();
+        m_imguiLayer->end();
 
         m_window->onUpdate();
     }
@@ -105,8 +104,8 @@ namespace JC2D {
         double accumulator = 0.;
         TimePoint currentTime = Clock::now();
 
+        pushOverlay(m_imguiLayer);
         start();
-        pushOverlay(&m_imguiLayer);
 
         JC2D_CORE_INFO("Engine running");
 

@@ -65,8 +65,8 @@ add_library(engine SHARED
     src/core/render/renderer.cpp
     src/core/render/shaders/shader.cpp
     src/core/window/window.cpp 
-    # src/core/resource/resource_manager.cpp
-    # src/core/resource/image.cpp
+    src/core/resource/resource_manager.cpp
+    src/core/resource/image.cpp
 )
 add_library(jc2d::engine ALIAS engine)
 

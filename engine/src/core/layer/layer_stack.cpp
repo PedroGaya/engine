@@ -1,6 +1,6 @@
 #include "../../jc2dpch.h"
 #include "layer_stack.h"
-
+#include "../logger/logger.h"
 namespace JC2D {
 
     LayerStack::~LayerStack() {
@@ -11,15 +11,14 @@ namespace JC2D {
     }
 
     void LayerStack::pushLayer(Layer* layer) {
-        m_layers.emplace(m_layers.begin() + m_layerInsertIndex, layer);
+        m_layers.insert(m_layers.begin() + m_layerInsertIndex, layer);
         m_layerInsertIndex++;
-
+        layer->getName();
         layer->onAttach();
     }
 
     void LayerStack::pushOverlay(Layer* overlay) {
-        m_layers.emplace_back(overlay);
-
+        m_layers.push_back(overlay);
         overlay->onAttach();
     }
 

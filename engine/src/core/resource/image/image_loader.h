@@ -1,7 +1,7 @@
 #pragma once
 
-#include "./loader.h"
-#include "./image.h"
+#include "../loader.h"
+#include "./image_resource.h"
 
 namespace JC2D {
     class ImageLoader : public Loader {

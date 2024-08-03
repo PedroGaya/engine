@@ -6,7 +6,7 @@
 #include "../asserts.h"
 
 #include "./resource/resource_manager.h"
-#include "./resource/image_loader.h"
+#include "./resource/image/image_loader.h"
 
 using Clock = std::chrono::high_resolution_clock;
 using TimePoint = std::chrono::time_point<Clock>;

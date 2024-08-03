@@ -1,6 +1,6 @@
 #pragma once
 
-#include "./resource.h"
+#include "../resource.h"
 
 namespace JC2D {
     class JC2D_API ImageResource : public Resource {

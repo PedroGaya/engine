@@ -31,7 +31,15 @@ namespace JC2D {
             }
         };
 
-        static void unload(std::string path);  // TODO: IMPLEMENT THIS
+        static void unload(std::string assetPath) {
+            std::string path = m_baseAssetPath + assetPath;
+            auto resource = m_resources.find(path)->second;
+            auto loader = m_loaders.find(resource->getResourceType())->second;
+
+            loader->unload(resource.get());
+            resource.reset();
+            m_resources.erase(path);
+        };
 
         template <typename T>
         static std::weak_ptr<T> get(std::string path) {

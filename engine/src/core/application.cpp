@@ -46,15 +46,10 @@ namespace JC2D {
         m_metrics = std::unique_ptr<Metrics>(new Metrics());
 
         JC2D_CORE_INFO("Initializing resource manager.");
-
         ResourceManager::init("./assets");
 
         ImageLoader* imageLoader = new ImageLoader();
         ResourceManager::registerLoader(ResourceType::Image, imageLoader);
-
-        std::weak_ptr<ImageResource> chart = ResourceManager::load<ImageResource>("/chart.png");
-
-        JC2D_CORE_INFO("Loaded image {0} ({1}, {2})", "/chart.png", chart.lock()->getWidth(), chart.lock()->getHeight());
     }
 
     void Application::onEvent(Event& event) {

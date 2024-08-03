@@ -31,6 +31,8 @@ namespace JC2D {
             }
         };
 
+        static void unload(std::string path);  // TODO: IMPLEMENT THIS
+
         template <typename T>
         static std::weak_ptr<T> get(std::string path) {
             std::shared_ptr<Resource> resource = m_resources.find(path)->second;

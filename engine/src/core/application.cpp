@@ -5,6 +5,9 @@
 #include "./logger/logger.h"
 #include "../asserts.h"
 
+#include "./resource/resource_manager.h"
+#include "./resource/image_loader.h"
+
 using Clock = std::chrono::high_resolution_clock;
 using TimePoint = std::chrono::time_point<Clock>;
 using Duration = std::chrono::duration<double>;
@@ -41,6 +44,17 @@ namespace JC2D {
 
         JC2D_CORE_INFO("Initializing metrics system.");
         m_metrics = std::unique_ptr<Metrics>(new Metrics());
+
+        JC2D_CORE_INFO("Initializing resource manager.");
+
+        ResourceManager::init("./assets");
+
+        ImageLoader* imageLoader = new ImageLoader();
+        ResourceManager::registerLoader(ResourceType::Image, imageLoader);
+
+        std::weak_ptr<ImageResource> chart = ResourceManager::load<ImageResource>("/chart.png");
+
+        JC2D_CORE_INFO("Loaded image {0} ({1}, {2})", "/chart.png", chart.lock()->getWidth(), chart.lock()->getHeight());
     }
 
     void Application::onEvent(Event& event) {

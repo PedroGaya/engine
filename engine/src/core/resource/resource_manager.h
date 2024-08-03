@@ -16,22 +16,26 @@ namespace JC2D {
 
         template <typename T>
         static std::weak_ptr<T> load(std::string path) {
-            std::string fullPath = m_baseAssetPath + path;
+            if (m_resources.find(path) == m_resources.end()) {
+                std::string fullPath = m_baseAssetPath + path;
 
-            Loader* loader = m_loaders.find(T::getStaticType())->second;
-            auto resource = static_cast<T*>(loader->load(fullPath));
+                Loader* loader = m_loaders.find(T::getStaticType())->second;
+                auto resource = static_cast<T*>(loader->load(fullPath));
 
-            auto shared = std::shared_ptr<T>(resource);
-            m_resources.insert({fullPath, shared});
+                auto shared = std::shared_ptr<T>(resource);
+                m_resources.insert({fullPath, shared});
 
-            return shared;
+                return shared;
+            } else {
+                return get<T>(path);
+            }
         };
 
         template <typename T>
-        static std::weak_ptr<T> get(JC2D::UUID uuid) {
-            std::shared_ptr<Resource> resource = m_resources.find(uuid);
-            std::weak_ptr<Resource> wpResource = resource;
-            return wpResource;
+        static std::weak_ptr<T> get(std::string path) {
+            std::shared_ptr<Resource> resource = m_resources.find(path)->second;
+            std::shared_ptr<T> derived = std::dynamic_pointer_cast<T>(resource);
+            return derived;
         };
 
         static inline ResourceManager& getInstance() { return *s_instance; }
